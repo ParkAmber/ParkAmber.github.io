@@ -958,3 +958,13 @@
             transform: rotateY(90deg);
             color: #EDEDED;
         } */
+ @media screen and (max-width:425px) {
+            html {
+                overflow-x: hidden;
+            }
+
+            /* 
+            body {
+                overflow-x: hidden;
+            } */
+        }
