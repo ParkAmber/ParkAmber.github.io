@@ -1,5 +1,4 @@
-<script> 
-window.onload = function () {
+    window.onload = function () {
             var topBtn = document.querySelector(".topBtn");
             //top버튼 누르면 맨 앞으로 스크롤 이동시킴!!
             topBtn.addEventListener("click", function () {
@@ -37,4 +36,3 @@ window.onload = function () {
                 io.observe(item);
             });
         });
-</script> 
