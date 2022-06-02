@@ -1,10 +1,10 @@
-  body {
+   body {
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
         }
 
         .width-setter {
-            padding: 0 20px;
+            padding: 0 1.18vw;
         }
 
         .global-nav {
@@ -13,7 +13,7 @@
             left: 0;
             z-index: 10;
             width: 100%;
-            height: 30px;
+            height: 1.78vw;
             padding: 0 0.1rem;
         }
 
@@ -22,10 +22,10 @@
             align-items: center;
             justify-content: space-between;
             max-width: 1000px;
-            height: 100px;
-            width: 600px;
-            margin-top: -120px;
-            margin-left: 900px;
+            height: 5vw 94vw;
+            width: 35.67vw;
+            margin-top: -7.134vw;
+            margin-left: 53.5vw;
             /* margin-right: 150px; */
             /* margin: 0 auto; */
         }
@@ -34,16 +34,24 @@
             font-size: 20px;
         }
 
+        .dropdown-content {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
         a {
             color: rgb(29, 29, 31);
             text-decoration: none;
         }
 
         .global-logo {
-            width: 160px;
+            width: 9.512vw;
             height: auto;
-            padding: 0 20px;
-            margin-top: 10px;
+            padding: 0 1.189vw;
+            margin-top: 0.59vw;
         }
 
         img.logo {
@@ -53,7 +61,7 @@
 
         /* main section */
         .main {
-            margin-top: 200px;
+            margin-top: 11.89vw;
         }
 
         .main-con {
@@ -62,48 +70,48 @@
         }
 
         .main-image {
-            width: 700px;
-            height: 700px;
+            width: 41.61vw;
+            height: 41.61vw;
             background-color: #EDEDED;
         }
 
         .main-content {
-            padding: 70px 0 0 100px;
+            padding: 4.161vw 0 0 5.945vw;
         }
 
         .main-intro .name {
-            font-size: 24px;
+            font-size: 1.42vw;
             font-weight: 500;
             color: #7B7B7B;
         }
 
         .main-intro h1 {
-            margin-top: 20px;
-            font-size: 70px;
+            margin-top: 1.189vw;
+            font-size: 4.161vw;
             font-weight: 500;
-            line-height: 90px;
+            line-height: 5.350vw;
         }
 
         .main-intro p {
-            margin-top: 20px;
-            font-size: 28px;
+            margin-top: 1.189vw;
+            font-size: 1.66vw;
             font-weight: 500;
-            line-height: 42px;
+            line-height: 2.49vw;
             color: #7B7B7B;
         }
 
         .main-contact {
-            margin-top: 40px;
+            margin-top: 2.378vw;
         }
 
         h3.contact-text {
-            font-size: 22px;
+            font-size: 1.30vw;
             color: #FFC074;
             font-weight: 400;
         }
 
         .social-icons {
-            margin-top: 20px;
+            margin-top: 1.189vw;
         }
 
         .main-contact img {
@@ -113,17 +121,17 @@
 
         /* work section */
         .work {
-            margin-top: 200px;
+            margin-top: 11.89vw;
         }
 
         .work-title {
             /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
             margin: 0 auto;
-            width: 170px;
+            width: 10.10vw;
             text-align: center;
-            font-size: 60px;
+            font-size: 3.56vw;
             font-weight: bold;
-            padding-bottom: 10px;
+            padding-bottom: 0.59vw;
             /* border-bottom: 100px; */
             border-bottom: 5px solid #FFC074;
         }
@@ -138,47 +146,47 @@
 
         .work-item {
             /* position: relative; */
-            width: 520px;
+            width: 30.9vw;
             height: auto;
         }
 
         .work-item img {
             width: 100%;
             height: auto;
-            margin-top: 100px;
+            margin-top: 5.945vw;
         }
 
         .work-desc h2 {
-            font-size: 22px;
+            font-size: 1.307vw;
             font-weight: 500;
         }
 
         .work-desc p {
-            font-size: 18px;
+            font-size: 1.07vw;
             color: #7b7b7b;
         }
 
         .work-desc {
             /* margin: 0 auto; */
             /* padding-bottom: 30px; */
-            margin-left: 40px;
-            width: 400px;
+            margin-left: 2.378vw;
+            width: 23.78vw;
             text-align: center;
             border-bottom: 2px solid #EDEDED;
         }
 
         .work-desc p {
-            margin-top: 20px;
+            margin-top: 1.189vw;
         }
 
         .circle {
             padding: 0;
             margin: 0;
             position: relative;
-            left: 400px;
-            top: -30px;
-            width: 40px;
-            height: 40px;
+            left: 23.78vw;
+            top: -1.78vw;
+            width: 2.378vw;
+            height: 2.378vw;
             background-color: #ffffff;
             box-shadow: 5px 5px 10px #EDEDED;
             border-radius: 50%;
@@ -200,7 +208,7 @@
         .circle:before {
             content: '';
             position: absolute;
-            width: 40px;
+            width: 2.378vw;
             height: 1.5px;
             left: -160%;
             top: 60%;
@@ -238,48 +246,48 @@
         /* skills section */
         .type {
             position: absolute;
-            margin-top: 10px;
+            margin-top: 0.59vw;
             display: flex;
         }
 
         .adobe-tools {
             opacity: 0.9;
-            width: 60px;
+            width: 3.56vw;
             height: auto;
             position: absolute;
         }
 
         .adobe-tools:nth-child(1) {
-            margin-left: 650px;
-            margin-top: 30px;
+            margin-left: 38.64vw;
+            margin-top: 1.78vw;
         }
 
         .adobe-tools:nth-child(2) {
-            margin-left: 820px;
-            margin-top: 1200px;
+            margin-left: 48.75vw;
+            margin-top: 71.34vw;
         }
 
         .adobe-tools:nth-child(3) {
-            margin-left: 100px;
-            margin-top: 1370px;
+            margin-left: 5.945vw;
+            margin-top: 81.45vw;
         }
 
         .adobe-tools:nth-child(4) {
-            margin-left: 1300px;
-            margin-top: 150px;
+            margin-left: 77.28vw;
+            margin-top: 8.91vw;
         }
 
         .adobe-tools:nth-child(5) {
-            margin-left: 1500px;
-            margin-top: 1220px;
+            margin-left: 89.17vw;
+            margin-top: 72.53vw;
         }
 
         .type-left {
-            margin-left: -20px;
+            margin-left: -1.189vw;
         }
 
         .type-right {
-            margin-left: -150px;
+            margin-left: -8.917vw;
         }
 
         /* .type-right {
@@ -295,8 +303,8 @@
             text-align: center;
             /* border-right: .15em solid orange; */
             font-family: "Courier";
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.189vw;
+            line-height: 1.54vw;
             white-space: nowrap;
             overflow: hidden;
             color: #FFF9F1;
@@ -311,18 +319,18 @@
         .html p:nth-child(2),
         .html p:nth-child(3) {
             opacity: 0.5;
-            margin-left: 20px;
+            margin-left: 1.189vw;
             text-align: left;
         }
 
         .html p:nth-child(3) {
-            margin-top: 50px;
-            margin-left: 40px;
+            margin-top: 2.97vw;
+            margin-left: 2.37vw;
         }
 
         .css p:nth-child(1) {
             opacity: 0.7;
-            margin-left: 50px;
+            margin-left: 2.972vw;
         }
 
 
@@ -341,8 +349,8 @@
 
         .js p:nth-child(6) {
             opacity: 0.6;
-            margin-top: 50px;
-            margin-left: 200px;
+            margin-top: 2.972vw;
+            margin-left: 11.89vw;
             text-align: center;
         }
 
@@ -350,11 +358,11 @@
             color: #FFF9F1;
             opacity: 1;
             font-weight: 800;
-            font-size: 24px;
+            font-size: 1.42vw;
         }
 
         strong {
-            font-size: 60px;
+            font-size: 3.56vw;
             font-weight: bold;
         }
 
@@ -598,7 +606,7 @@
         }
 */
         .skills {
-            margin-top: 160px;
+            margin-top: 9.512vw;
             padding-bottom: 20vh;
             /* width: 100%;
             height: 20vh; */
@@ -609,12 +617,12 @@
             position: relative;
             /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
             margin: 0 auto;
-            width: 170px;
+            width: 10.10vw;
             text-align: center;
-            font-size: 60px;
+            font-size: 3.56vw;
             font-weight: bold;
-            padding-top: 120px;
-            padding-bottom: 10px;
+            padding-top: 7.13vw;
+            padding-bottom: 0.59vw;
             /* border-bottom: 100px; */
             border-bottom: 5px solid #FFF9F1;
         }
@@ -625,8 +633,8 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            margin: 80px auto;
-            padding-bottom: 50px;
+            margin: 4.756vw auto;
+            padding-bottom: 2.972vw;
             /* margin-top: 60px; */
             width: 90%;
             height: 100%;
@@ -643,29 +651,29 @@
         .skills-design,
         .skills-coding,
         .skills-photography {
-            width: 480px;
-            margin: 150px auto;
-            padding: 50px 50px 50px 50px;
+            width: 28.53vw;
+            margin: 8.917vw auto;
+            padding: 2.972vw;
 
         }
 
         span.num {
-            margin-left: -180px;
+            margin-left: -10.70vw;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 1.18vw;
             color: #FFC074;
         }
 
         .skills-photography span.num {
-            margin-left: -300px;
+            margin-left: -17.83vw;
         }
 
         .skills-desc h3 {
             text-align: center;
-            font-size: 40px;
+            font-size: 2.378vw;
             color: #FFC074;
             font-weight: 600;
-            margin-bottom: 40px;
+            margin-bottom: 2.378vw;
         }
 
         .skills-design,
@@ -674,9 +682,9 @@
         }
 
         .skills-content p {
-            font-size: 18px;
-            line-height: 24px;
-            margin: 30px 30px;
+            font-size: 1.07vw;
+            line-height: 1.42vw;
+            margin: 1.78vw 1.78vw;
             text-align: center;
         }
 
@@ -696,12 +704,12 @@
         .contact-title {
             /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
             margin: 0 auto;
-            width: 250px;
+            width: 14.863vw;
             text-align: center;
-            font-size: 60px;
+            font-size: 3.567vw;
             font-weight: bold;
-            padding-top: 90px;
-            padding-bottom: 10px;
+            padding-top: 5.35vw;
+            padding-bottom: 0.594vw;
             /* border-bottom: 100px; */
             border-bottom: 5px solid #FFC074;
         }
@@ -713,12 +721,12 @@
             font-size: 40px;
             line-height: 60px;
             font-weight: 600;
-            padding-top: 90px;
+            padding-top: 5.35vw;
         }
 
         .contact-info {
             display: flex;
-            margin: 60px auto;
+            margin: 3.567vw auto;
 
             justify-content: center;
             align-items: center;
@@ -726,27 +734,28 @@
 
         .contact-info h3 {
             font-size: 24px;
-            padding: 30px;
+            padding: 1.783vw;
         }
 
         .contact-info h3 a {
-            padding-bottom: 4px;
+            padding-bottom: 0.23vw;
             border-bottom: 2px solid #EDEDED;
         }
 
         .email-send {
-            margin-top: -50px;
-            margin-left: 700px;
+            margin-top: -2.972vw;
+            margin-left: 41.617vw;
         }
 
         h2.email-me {
-            font-size: 700;
+            font-size: 40px;
+            font-weight: 600;
             color: #FFC074;
         }
 
         .email-send .circle {
-            left: 600px;
-            top: -50px;
+            left: 35.67vw;
+            top: -2.972vw;
         }
 
         .email-send a:hover .circle::before,
@@ -760,19 +769,19 @@
 
         .side-text {
             position: absolute;
-            margin-top: -80px;
-            margin-left: 1300px;
+            margin-top: -4.75vw;
+            margin-left: 77.28vw;
         }
 
         .text-1 {
-            margin: 25px 10px 20px 10px;
+            margin: 1.486vw 0.59vw 1.189vw .59vw;
         }
 
         .text-1 span {
             position: absolute;
             font-size: 15px;
-            margin-top: -12px;
-            margin-left: -35px;
+            margin-top: -0.713vw;
+            margin-left: -2.08vw;
             color: #6C655D;
         }
 
@@ -782,13 +791,13 @@
         }
 
         .text-1:first-child {
-            margin-left: -65px;
-            padding-bottom: 10px;
+            margin-left: -3.86vw;
+            padding-bottom: 0.594vw;
         }
 
         .text-1:hover {
-            margin-left: -65px;
-            padding-bottom: 10px;
+            margin-left: -3.864vw;
+            padding-bottom: 0.594vw;
             cursor: pointer;
             transition: 1s;
             /* color: #FFC074; */
@@ -821,8 +830,8 @@
             z-index: -100;
             width: 100%;
             height: auto;
-            margin-top: -300px;
-            margin-left: 1230px;
+            margin-top: -17.83vw;
+            margin-left: 73.12vw;
         }
 
         .work .rect-deco img {
@@ -834,16 +843,16 @@
             /* z-index: -100; */
             width: 100%;
             height: auto;
-            margin-top: -200px;
-            margin-left: -500px;
+            margin-top: -11.89vw;
+            margin-left: -29.72vw;
         }
 
         .contact .rect-deco {
             z-index: -100;
             width: 100%;
             height: auto;
-            margin-top: -200px;
-            margin-left: 1050px;
+            margin-top: -11.890vw;
+            margin-left: 62.42vw;
         }
 
         /* line-deco */
@@ -857,46 +866,46 @@
             z-index: -100;
             width: 100%;
             height: auto;
-            margin-top: -100px;
-            margin-left: 1150px;
+            margin-top: -5.94vw;
+            margin-left: 68.370vw;
         }
 
         .work .first-deco {
             /* z-index: -100;
             width: 100%;
             height: auto; */
-            margin-top: -100px;
-            margin-left: 50px;
+            margin-top: -5.94vw;
+            margin-left: 2.97vw;
         }
 
         .skills .line-deco {
             /* z-index: -100; */
             width: 100%;
             height: auto;
-            margin-top: -100px;
-            margin-left: 1150px;
+            margin-top: -5.94vw;
+            margin-left: 68.37vw;
         }
 
         .skills .first-deco {
             /* z-index: -100;
             width: 100%;
             height: auto; */
-            margin-top: -100px;
-            margin-left: 250px;
+            margin-top: -5.94vw;
+            margin-left: 14.863vw;
         }
 
         .contact .line-deco {
             z-index: -100;
-            margin-top: 20px;
-            margin-left: 950px;
+            margin-top: 1.189vw;
+            margin-left: 56.48vw;
         }
 
         /* top button */
         .topBtn {
             position: absolute;
-            width: 95px;
-            margin-top: 130px;
-            margin-left: 1400px;
+            width: 5.648vw;
+            margin-top: 7.728vw;
+            margin-left: 83.23vw;
             /* bottom: 10%; */
             /* right: 70px; */
             padding-bottom: 2px;
@@ -909,7 +918,7 @@
 
         .topBtn p {
             /* text-decoration: underline; */
-            padding-bottom: 10px;
+            padding-bottom: 0.594vw;
         }
 
         .topBtn:before {
@@ -958,7 +967,7 @@
             transform: rotateY(90deg);
             color: #EDEDED;
         } */
-@media screen and (max-width:425px) {
+        @media screen and (max-width:425px) {
             /* html {
                 overflow-x: hidden;
             } */
@@ -1501,5 +1510,305 @@
                 transform-origin: left;
             }
 
+        }
+
+        /* Tablet */
+        @media screen and (min-width:426px) and (max-width:768px) {}
+
+        /* Desktop */
+        @media screen and (min-width:769px) and (max-width:1024px) {
+
+            /* html {
+                position: relative;
+            } */
+
+            body {
+                /* position: fixed; */
+                overflow-x: hidden;
+            }
+
+            /* */
+
+            .global-nav {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                width: 100%;
+                height: 1.78vw;
+                padding: 0 0.1vw;
+            }
+
+            .global-nav-links {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* max-width: 1000px; */
+                height: 5vw 94vw;
+                width: 35.67vw;
+                margin-top: -5vw;
+                /* margin-right: 30vw; */
+                margin-left: 60vw;
+                /* margin-right: 150px; */
+                /* margin: 0 auto; */
+            }
+
+            .global-nav-links a {
+                margin-right: 4vw;
+                font-size: 1.46vw;
+            }
+
+            .global-logo {
+                width: 10vw;
+                height: auto;
+                padding: 0 1.189vw;
+                margin-top: 1vw;
+            }
+
+            .main-image {
+                width: 60vw;
+                height: 45vw;
+                background-color: #EDEDED;
+            }
+
+            .main-intro .name {
+                font-size: 1.95vw;
+                font-weight: 500;
+                color: #7B7B7B;
+            }
+
+            .work-title {
+                /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
+                margin: 0 auto;
+                width: 11vw;
+                text-align: center;
+                font-size: 3.9vw;
+                font-weight: bold;
+                padding-bottom: 0.59vw;
+                /* border-bottom: 100px; */
+                border-bottom: 5px solid #FFC074;
+            }
+
+            .work-item {
+                /* position: relative; */
+                width: 40vw;
+                height: auto;
+            }
+
+            .work-desc h2 {
+                font-size: 1.95vw;
+                font-weight: 500;
+            }
+
+            .work-desc p {
+                font-size: 1.46vw;
+                color: #7b7b7b;
+            }
+
+            .work-desc {
+                /* margin: 0 auto; */
+                /* padding-bottom: 30px; */
+                margin-left: 4vw;
+                width: 30vw;
+                text-align: center;
+                border-bottom: 2px solid #EDEDED;
+            }
+
+            .circle {
+                padding: 0;
+                margin: 0;
+                position: relative;
+                left: 30vw;
+                top: -5vw;
+                width: 4vw;
+                height: 4vw;
+                background-color: #ffffff;
+                box-shadow: 5px 5px 10px #EDEDED;
+                border-radius: 50%;
+            }
+
+            .circle:before {
+                /* content: '';
+                position: absolute;
+                width: 2.378vw;
+                height: 1.5px; */
+                width: 3.378vw;
+                left: -160%;
+                top: 60%;
+                /* margin: -50px 0 0 25px; */
+                /* padding: 0;
+                font-weight: normal;
+                opacity: 1;
+                transform: translateX(50px);
+
+                background: #FFC074; */
+            }
+
+            .circle:after {
+                /* content: '';
+                position: absolute; */
+                left: 18%;
+                top: 35%;
+                /* width: 15px;
+                height: 1.5px;
+                background: #FFC074;
+                transform: rotate(45deg);
+                transform-origin: left; */
+            }
+
+            .work-title {
+                /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
+                margin: 0 auto;
+                width: 10.10vw;
+                text-align: center;
+                font-size: 3.56vw;
+                font-weight: bold;
+                padding-bottom: 0.59vw;
+                /* border-bottom: 100px; */
+                border-bottom: 5px solid #FFC074;
+            }
+
+            .type {
+                position: absolute;
+                margin-top: 2vw;
+                display: flex;
+            }
+
+            .adobe-tools:nth-child(2) {
+                margin-left: 45vw;
+                margin-top: 80vw;
+            }
+
+            .adobe-tools:nth-child(5) {
+                margin-left: 89.17vw;
+                margin-top: 78vw;
+            }
+
+            .skills {
+                margin-top: 9.512vw;
+                padding-bottom: 12vh;
+                /* width: 100%;
+            height: 20vh; */
+                background-color: #FFC074;
+            }
+
+            .skills-title {
+                position: relative;
+                /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
+                margin: 0 auto;
+                width: 11vw;
+                text-align: center;
+                font-size: 3.9vw;
+                font-weight: bold;
+                padding-top: 7.13vw;
+                padding-bottom: 0.59vw;
+                /* border-bottom: 100px; */
+                border-bottom: 5px solid #FFF9F1;
+            }
+
+            .contact-title {
+                /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
+                margin: 0 auto;
+                width: 17vw;
+                text-align: center;
+                font-size: 3.9vw;
+                font-weight: bold;
+                padding-top: 5.35vw;
+                padding-bottom: 0.594vw;
+                /* border-bottom: 100px; */
+                border-bottom: 5px solid #FFC074;
+            }
+
+            .contact h2 {
+                margin: 0 auto;
+                /* width: 350px; */
+                text-align: center;
+                font-size: 2.9vw;
+                line-height: 4vw;
+                font-weight: 600;
+                padding-top: 5.35vw;
+            }
+
+            .contact-info h3 {
+                font-size: 1.95vw;
+                /* padding: 1.783vw; */
+            }
+
+            .text-1 span {
+                /* position: absolute; */
+                font-size: 1.2vw;
+                /* margin-top: -0.713vw;
+            margin-left: -2.08vw;
+            color: #6C655D; */
+            }
+
+            .text-1 p {
+                font-size: 1.46vw;
+                color: #7b7b7b;
+            }
+
+            .skills .rect-deco {
+                /* z-index: -100; */
+                width: 60%;
+                height: auto;
+                margin-top: -11.89vw;
+                margin-left: -29.72vw;
+            }
+
+            .contact .rect-deco {
+                z-index: -100;
+                width: 55%;
+                height: auto;
+                margin-top: -11.890vw;
+                margin-left: 62.42vw;
+            }
+
+            .topBtn {
+                position: absolute;
+                width: 10vw;
+                margin-top: 7.728vw;
+                margin-left: 78vw;
+                /* bottom: 10%; */
+                /* right: 70px; */
+                padding-bottom: 2px;
+                text-align: center;
+                /* border-radius: 6px 6px 6px 6px; */
+                /* background: none;
+                border-bottom: solid 2px #FFC074;
+                transition: all .3s ease-out;
+                cursor: pointer; */
+            }
+
+            .topBtn:before {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 30px;
+                left: -140%;
+                top: -10%;
+                margin-top: -40px;
+                margin-left: 95px;
+                /* margin: -50px 0 0 25px; */
+                padding: 0;
+                font-weight: normal;
+                opacity: 1;
+                transform: translateX(100px);
+
+                background: #000;
+            }
+
+            .topBtn:after {
+                content: '';
+                position: absolute;
+                left: -103%;
+                top: 38%;
+                margin-top: -54px;
+                margin-left: 158px;
+                width: 15px;
+                height: 2px;
+                background: #000;
+                transform: rotate(135deg);
+                transform-origin: left;
+            }
         }
 
