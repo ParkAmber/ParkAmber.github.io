@@ -1,4 +1,4 @@
-  body {
+     body {
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
         }
@@ -80,7 +80,7 @@
             padding: 5px 10px 5px 10px;
             background-color: #FFF9F1;
             color: #FFC074;
-            font-size: 20px;
+            font-size: 1.18vw;
             border-radius: 10px;
         }
 
@@ -259,23 +259,45 @@
 
 
         } */
-        .circle:before {
+        /* .circle:before {
             content: '';
             position: absolute;
             width: 2.378vw;
             height: 1.5px;
             left: -160%;
             top: 60%;
-            /* margin: -50px 0 0 25px; */
+            margin: -50px 0 0 25px;
             padding: 0;
             font-weight: normal;
             opacity: 1;
             transform: translateX(50px);
 
             background: #FFC074;
+        } */
+        .circle:before {
+            content: '';
+            background: url(arrow.png);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            position: absolute;
+            /* stroke: 2px solid #000; */
+            /* stroke: 2px #000; */
+            width: 90px;
+            height: 35px;
+            /* width: 2.378vw;
+            height: 1.5px; */
+            left: -50%;
+            top: 15%;
+            /* margin: -50px 0 0 25px; */
+            /* padding: 0;
+            font-weight: normal;
+            opacity: 1;
+            transform: translateX(50px); */
+
+            /* background: #FFC074; */
         }
 
-        .circle:after {
+        /* .circle:after {
             content: '';
             position: absolute;
             left: 40%;
@@ -286,15 +308,19 @@
             background: #FFC074;
             transform: rotate(45deg);
             transform-origin: left;
-        }
+        } */
 
         .circle:hover {
             background-color: #FFC074;
         }
 
-        .work-desc a:hover .circle::before,
-        .work-desc a:hover .circle::after {
-            background: #000;
+        .work-desc a:hover .circle::before
+
+        /* .work-desc a:hover .circle::after { */
+            {
+            background: url(arrow-hover.png);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
         }
 
         /* skills section */
@@ -812,9 +838,10 @@
             top: -2.972vw;
         }
 
-        .email-send a:hover .circle::before,
-        .email-send a:hover .circle::after {
-            background: #000;
+        .email-send a:hover .circle::before {
+            background: url(arrow-hover.png);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
         }
 
 
@@ -977,6 +1004,22 @@
 
         .topBtn:before {
             content: '';
+            background: url(arrow-hover.png);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            position: absolute;
+            transform: rotate(-90deg);
+            /* stroke: 2px solid #000; */
+            /* stroke: 2px #000; */
+            width: 80px;
+            height: 30px;
+            /* width: 2.378vw;
+            height: 1.5px; */
+            margin-top: -4vw;
+            margin-left: 3vw;
+            left: -50%;
+            top: 15%;
+            /* content: '';
             position: absolute;
             width: 2px;
             height: 30px;
@@ -984,15 +1027,16 @@
             top: -10%;
             margin-top: -40px;
             margin-left: 95px;
-            /* margin: -50px 0 0 25px; */
+          
             padding: 0;
             font-weight: normal;
             opacity: 1;
             transform: translateX(100px);
 
-            background: #000;
+            background: #000; */
         }
 
+        /* 
         .topBtn:after {
             content: '';
             position: absolute;
@@ -1005,7 +1049,7 @@
             background: #000;
             transform: rotate(135deg);
             transform-origin: left;
-        }
+        } */
 
         /* 
         .topBtn:hover {
@@ -1037,7 +1081,7 @@
             }
 
             .global-logo {
-                margin-left: 6vw;
+                margin-left: 5vw;
                 width: 18vw;
                 height: auto;
                 padding: 0 1.189vw;
@@ -1289,32 +1333,9 @@
             }
 
             .circle:before {
-                content: '';
-                position: absolute;
-                width: 8.378vw;
-                height: 1.5px;
-                left: -180%;
-                top: 60%;
-                /* margin: -50px 0 0 25px; */
-                padding: 0;
-                font-weight: normal;
-                opacity: 1;
-                transform: translateX(50px);
-
-                background: #FFC074;
-            }
-
-            .circle:after {
-                content: '';
-                position: absolute;
-                left: 40%;
-                top: 32%;
-
-                width: 15px;
-                height: 1.5px;
-                background: #FFC074;
-                transform: rotate(45deg);
-                transform-origin: left;
+                background-size: 50% 50%;
+                width: 80px;
+                height: 30px;
             }
 
             .adobe-tools {
@@ -1514,6 +1535,13 @@
                 height: auto;
             }
 
+            .topBtn:before {
+                width: 60px;
+                height: 25px;
+                margin-top: -13vw;
+                margin-left: 13vw;
+            }
+
             .topBtn {
                 position: absolute;
                 width: 20vw;
@@ -1536,37 +1564,6 @@
                 padding-bottom: 0.594vw;
             }
 
-            .topBtn:before {
-                content: '';
-                position: absolute;
-                width: 2px;
-                height: 25px;
-                left: -180%;
-                top: -10%;
-                margin-top: -30px;
-                margin-left: 95px;
-                /* margin: -50px 0 0 25px; */
-                padding: 0;
-                font-weight: normal;
-                opacity: 1;
-                transform: translateX(100px);
-
-                background: #000;
-            }
-
-            .topBtn:after {
-                content: '';
-                position: absolute;
-                left: -120%;
-                top: 35%;
-                margin-top: -39px;
-                margin-left: 145px;
-                width: 15px;
-                height: 2px;
-                background: #000;
-                transform: rotate(135deg);
-                transform-origin: left;
-            }
 
         }
 
@@ -1813,33 +1810,11 @@
             }
 
             .circle:before {
-                content: '';
-                position: absolute;
-                width: 4.378vw;
-                height: 1.5px;
-                left: -160%;
-                top: 60%;
-                /* margin: -50px 0 0 25px; */
-                padding: 0;
-                font-weight: normal;
-                opacity: 1;
-                transform: translateX(50px);
-
-                background: #FFC074;
+                background-size: 50% 50%;
+                width: 80px;
+                height: 30px;
             }
 
-            .circle:after {
-                content: '';
-                position: absolute;
-                left: 30%;
-                top: 32%;
-
-                width: 15px;
-                height: 1.5px;
-                background: #FFC074;
-                transform: rotate(45deg);
-                transform-origin: left;
-            }
 
             .adobe-tools {
                 opacity: 0.9;
@@ -1960,6 +1935,13 @@
             .email-send .circle {
                 left: 38vw;
                 top: -4.5vw;
+            }
+
+            .topBtn:before {
+                width: 60px;
+                height: 25px;
+                margin-top: -7vw;
+                margin-left: 8vw;
             }
 
             .text-1 span {
@@ -2126,33 +2108,12 @@
             }
 
             .circle:before {
-                /* content: '';
-                position: absolute;
-                width: 2.378vw;
-                height: 1.5px; */
-                width: 3.378vw;
-                left: -160%;
-                top: 60%;
-                /* margin: -50px 0 0 25px; */
-                /* padding: 0;
-                font-weight: normal;
-                opacity: 1;
-                transform: translateX(50px);
-
-                background: #FFC074; */
+                background-size: 50% 50%;
+                margin-top: 0.2vw;
+                width: 80px;
+                height: 30px;
             }
 
-            .circle:after {
-                /* content: '';
-                position: absolute; */
-                left: 18%;
-                top: 35%;
-                /* width: 15px;
-                height: 1.5px;
-                background: #FFC074;
-                transform: rotate(45deg);
-                transform-origin: left; */
-            }
 
             .work-title {
                 /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
@@ -2277,35 +2238,16 @@
                 cursor: pointer; */
             }
 
+            .email-send .circle {
+                left: 39vw;
+                top: -4vw;
+            }
+
             .topBtn:before {
-                content: '';
-                position: absolute;
-                width: 2px;
-                height: 30px;
-                left: -140%;
-                top: -10%;
-                margin-top: -40px;
-                margin-left: 95px;
-                /* margin: -50px 0 0 25px; */
-                padding: 0;
-                font-weight: normal;
-                opacity: 1;
-                transform: translateX(100px);
-
-                background: #000;
+                width: 60px;
+                height: 25px;
+                margin-top: -5vw;
+                margin-left: 7vw;
             }
 
-            .topBtn:after {
-                content: '';
-                position: absolute;
-                left: -103%;
-                top: 38%;
-                margin-top: -54px;
-                margin-left: 158px;
-                width: 15px;
-                height: 2px;
-                background: #000;
-                transform: rotate(135deg);
-                transform-origin: left;
-            }
         }
