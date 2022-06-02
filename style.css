@@ -2251,3 +2251,11 @@
             }
 
         }
+
+        @media screen and (min-width:4000px) {
+            .work-item {
+                /* position: relative; */
+                width: 25vw;
+                height: auto;
+            }
+        }
