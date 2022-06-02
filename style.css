@@ -1,4 +1,4 @@
-    body {
+  body {
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
         }
@@ -1149,7 +1149,7 @@
                 margin-bottom: 1em;
                 padding: 4vw;
                 display: block;
-                color: #f38630;
+                color: #FFC074;
                 text-decoration: none;
             }
 
@@ -1159,17 +1159,18 @@
                 position: absolute;
                 background-color: #FFF9F1;
                 min-width: 50vw;
+                height: 72vw;
                 margin: 0 auto;
                 box-shadow: 0px 8px 16px 0px rgba(159, 159, 159, 0.2);
                 z-index: 1;
             }
 
             .dropdown-content a {
-                font-size: 12px;
+                font-size: 3.5vw;
                 text-align: center;
                 float: none;
                 color: black;
-                padding: 12px 16px;
+                padding: 1vw 1vw;
                 text-decoration: none;
                 display: block;
                 text-align: left;
@@ -1177,6 +1178,8 @@
 
             .dropdown-content a:hover {
                 background-color: #FFF9F1;
+                font-size: 4vw;
+                color: #FFC074;
             }
 
             .dropdown:hover .dropdown-content {
