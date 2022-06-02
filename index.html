@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<!--  -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,12 +25,25 @@
             <div class="global-logo">
                 <a href="#" class="logo-home-link"> <img class="logo" src="lo.png"></a>
             </div>
-            <div class="global-nav-links">
-                <a href="#" class="global-nav-item">Home</a>
-                <a href="#" class="global-nav-item">Work</a>
-                <a href="#" class="global-nav-item">About</a>
-                <a href="#" class="global-nav-item">Contact</a>
-            </div>
+            <label>
+                <input type="checkbox">
+                <span class="menu-con"><span class="hamburger"></span></span>
+                <div class="global-nav-links">
+                    <a href="#" class="global-nav-item">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="global-nav-item hover-dropdown">Work</a>
+                        <div class="dropdown-content">
+                            <a href="#">Starbucks Redesign</a>
+                            <a href="#">Indigo Redesign</a>
+                            <a href="#">Fragrance design </a>
+                        </div>
+                    </div>
+                    <!-- <button class="dropbtn">Dropdown</button> -->
+
+                    <a href="#" class="global-nav-item">About</a>
+                    <a href="#" class="global-nav-item">Contact</a>
+                </div>
+            </label>
         </nav>
     </header>
     <section class="main width-setter">
@@ -395,8 +407,8 @@
         <div class="topBtn">
             <p> Back to top</p>
         </div>
-      
-        </section>
-  
+        <!-- <button button="type" class="topBtn"></button> -->
+    </section>
+
         </body>
         </html>
