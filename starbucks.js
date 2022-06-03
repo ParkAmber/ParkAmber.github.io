@@ -1,4 +1,4 @@
-<script>
+
 
 
         window.addEventListener('load', () => {
@@ -136,4 +136,4 @@
         });
 
 
-    </script>
+
