@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/default.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;800;900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+    <!-- <script type="module" src="./assets/main.js"></script> -->
+    <style>
+        /* html {
+            overflow-x: hidden;
+        } */
+
+
+        body {
+
+            font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 170.45vw;
+            background-image: url('images/main_image.jpg');
+            background-size: 102vw;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+
+        header {
+            margin-top: -10px;
+            position: absolute;
+            font-family: 'Poppins', sans-serif;
+            width: 100vw;
+            height: 100px;
+            /* background: rgba(255, 255, 255, 0.543); */
+            /* filter: blur(15px);
+            -webkit-backdrop-filter: saturate(180%) blur(15px);
+            -moz-backdrop-filter: saturate(180%) blur(15px);
+            -o-backdrop-filter: saturate(180%) blur(15px); */
+            /* backdrop-filter: saturate(180%) blur(5px); */
+        }
+
+        .global-nav {
+            position: fixed;
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100px;
+            padding: 0 0.1rem;
+            background: rgba(255, 255, 255, 0.543);
+            /* -webkit-backdrop-filter: saturate(180%) blur(15px);
+            -moz-backdrop-filter: saturate(180%) blur(15px);
+            -o-backdrop-filter: saturate(180%) blur(15px); */
+            backdrop-filter: saturate(180%) blur(5px);
+
+        }
+
+        .global-nav-links {
+            /* background: #fff; */
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            height: 5vw 94vw;
+            width: 35.67vw;
+            margin-top: -5vw;
+            margin-left: 53.5vw;
+            /* backdrop-filter: saturate(180%) blur(15px); */
+            /* margin-right: 150px; */
+            /* margin: 0 auto; */
+        }
+
+        .global-nav-links a.global-nav-item {
+            font-size: 20px;
+            color: #000;
+        }
+
+        /* .dropdown-content {
+            display: none;
+            transition: all 5s ease;
+        } */
+        .hover-dropdown {
+            padding-bottom: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            transition: 5s;
+            margin-top: 10px;
+            width: 240px;
+            height: 180px;
+            background-color: #FFC074;
+            transition: all 5s ease;
+            transition-duration: 15s;
+            border-radius: 8px;
+        }
+
+        .dropdown-content a.submenu {
+            width: 250px;
+            color: #FFF9F1;
+            position: relative;
+            line-height: 40px;
+            top: 10px;
+            left: 20px;
+            font-size: 18px;
+            /* border-bottom: 2px solid #FFF; */
+        }
+
+        .dropdown {
+            transition-duration: 15s;
+        }
+
+        .dropdown:hover .dropdown-content {
+            transition-duration: 15s;
+            transition: all 5s ease;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            padding: 5px 10px 5px 10px;
+            background-color: #FFF9F1;
+            color: #FFC074;
+            font-size: 1.18vw;
+            border-radius: 10px;
+        }
+
+        /* .dropdown:checked .dropdown-content {
+            display: block;
+            margin-left: 0;
+            text-align: center;
+            margin-top: 40vw;
+            opacity: 1;
+        } */
+
+        input {
+            display: none;
+        }
+
+        header a {
+            color: rgb(29, 29, 31);
+            text-decoration: none;
+        }
+
+        .global-logo {
+            width: 9.512vw;
+            height: auto;
+            padding: 0 1.189vw;
+            margin-top: -1vw;
+        }
+
+        /* .global-logo .logo {
+                width: 100%;
+                height: 100%;
+            }        */
+        /* img.logo {
+            width: 100%;
+            height: 100%;
+        } */
+        /* section 1 */
+        img.logo {
+            margin: 0.837vw 0 0 3.58vw;
+            width: 6.578vw;
+            height: 6.578vw;
+        }
+
+        section.main h1 {
+            margin: 11.12vw 0 0 19.13vw;
+            font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+            font-size: 3.58vw;
+            font-weight: 500;
+            color: #FAFFEB;
+
+            letter-spacing: 0.17vw;
+
+        }
+
+        .nurture {
+            margin-left: 2.75vw;
+        }
+
+        .spirit {
+            margin-left: 5.74vw;
+        }
+
+        /* button */
+        p.button {
+            width: 6.57vw;
+            height: 2.39vw;
+            border-radius: 1.19vw;
+            background-color: #FAFFEB;
+            font-family: 'Noto Serif';
+            font-size: 0.83vw;
+            font-weight: bold;
+            /* button안의 text를 center로 위치시키는 법=> text-align: center; line-height: 40px(=height값!!); */
+            text-align: center;
+            line-height: 2.39vw;
+            margin: 3.34vw 0 0 24.88vw;
+        }
+
+        p.button:hover {
+            background-color: #007042;
+        }
+
+        p.button:hover a:nth-of-type(1) {
+            color: #FAFFEB;
+        }
+
+        section.second p.button:hover,
+        section.third p.button:hover {
+            background-color: #FAFFEB;
+        }
+
+        section.second p.button:hover a:nth-of-type(1) {
+            color: #007042;
+        }
+
+        section.third p.button:hover a:nth-of-type(1) {
+            color: #007042;
+        }
+
+        section.last p.button:hover {
+            background-color: #007042;
+
+        }
+
+        section.last p.button:hover a:nth-of-type(1) {
+            color: #F38B7E;
+        }
+
+        section.second p.button,
+        section.third p.button {
+            background-color: #007042;
+        }
+
+        section.third p.button {
+            margin-left: 62.79vw;
+        }
+
+        section.second p.button {
+            margin: 3.22vw 0 0 47.84vw;
+        }
+
+        section.last p.button {
+            background-color: #F38B7E;
+            margin: 2.39vw 0 0 38.27vw;
+        }
+
+        a:nth-of-type(1) {
+            color: #007042;
+        }
+
+        section.last a {
+            color: #FAFFEB;
+        }
+
+        section.second a,
+        section.third a {
+            color: #FAFFEB;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* section 2 */
+        /* section.second img.drink {
+            width: 10vw;
+            height: auto;
+        } */
+
+        section.second img:nth-of-type(1) {
+            margin: 14.95vw 0 0 53.82vw;
+            width: 15vw;
+            height: auto;
+        }
+
+        section.second img:nth-of-type(2) {
+
+            margin: 5.98vw 0 0 20.93vw;
+            width: 15vw;
+            height: auto;
+        }
+
+        h2.second-title {
+            font-family: 'Noto Serif';
+            font-size: 2.39vw;
+            color: #302F2E;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        h2.right-align {
+            margin-left: 4.78vw;
+        }
+
+        .second-content:nth-of-type(1) {
+            text-align: right;
+            margin: -36.87vw 53.82vw 0 0;
+        }
+
+        .second-content:nth-of-type(2) {
+            margin: 11.96vw 0 0 47.84vw;
+        }
+
+        .second-content p {
+            font-family: 'Noto Serif';
+            margin-top: -1.196vw;
+            font-size: 1.19vw;
+        }
+
+        span.greenText {
+            color: #007042;
+            font-weight: 600;
+        }
+
+        /* section 3 */
+        section.third img.hand-cup {
+            width: 16vw;
+            height: auto;
+            margin: 5.382vw 0 0 75.95vw;
+            opacity: 0.4;
+        }
+
+        h2.third-title {
+            z-index: 1000;
+            font-size: 2.39vw;
+            font-weight: bold;
+            font-style: italic;
+            color: #007042;
+            margin: -4.18vw 0 0 62.79vw;
+            opacity: 1;
+            text-shadow: 3px 3px 4px #C3C3C3;
+
+        }
+
+        .trip {
+            margin-left: 8.97vw;
+        }
+
+        section.third p:nth-of-type(1) {
+            font-size: 1.196vw;
+            margin-left: 62.79vw;
+        }
+
+        /* section 4 */
+        section.last {
+            margin-top: -2.5vw;
+        }
+
+        /* section.last img {
+            margin: 20.13vw 0 0 19.13vw;
+            width: 30.88vw;
+            height: auto;
+        } */
+
+        h3.last-title {
+            font-size: 2.39vw;
+            font-style: italic;
+            font-weight: bold;
+            color: #F38B7E;
+            margin: 0.498vw 0 0 23.92vw;
+        }
+
+        section.last p.gameText {
+            font-family: 'Noto Serif';
+            font-size: 1.43vw;
+            font-weight: bold;
+            color: #F38B7E;
+            margin: 0.4vw 0 0 26.9vw;
+        }
+
+
+        /* footer */
+        footer {
+            margin-top: 8.18vw;
+            text-align: center;
+            color: #fff;
+            font-size: 0.71vw;
+            font-weight: 100;
+            line-height: 1.79vw;
+        }
+
+        /* observe-ready */
+        .observe-ready {
+            opacity: 0;
+            transform: translateY(10%);
+            transition: 2s;
+        }
+
+        .observe-ready.active {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        /* 페렐렉스 텍스트 */
+        .text {
+            display: inline-block;
+            letter-spacing: -0.53vw;
+
+        }
+
+        .paragraph2 {
+            margin: 19.13vw 0 0 13.15vw;
+
+        }
+
+
+
+        .text2 {
+            font-size: 2.99vw;
+            font-family: 'Roboto';
+            font-weight: 900;
+            display: inline-block;
+            letter-spacing: -0.059vw;
+
+        }
+
+        .text2:first-child {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 100%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 100%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 100%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(2) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 90%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 90%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 90%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(3) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 90%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 90%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 90%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(4) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 50%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 70%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 70%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(5) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 50%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 50%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 50%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(6) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 40%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 40%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 40%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(7) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 40%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 40%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 40%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(8) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 30%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 30%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 30%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(9) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 30%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 30%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 30%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(10) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(11) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(12) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 20%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(13) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(14) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 1%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 1%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 1%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(15) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 1%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 1%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 1%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(16) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(17) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(18) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: -moz-linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            background: linear-gradient(to bottom right, #007042 10%, #FF847C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(19) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 0%, #FF847C 0%);
+            background: -moz-linear-gradient(to bottom right, #007042 0%, #FF847C 0%);
+            background: linear-gradient(to bottom right, #007042 0%, #FF847C 0%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text2:nth-child(20) {
+            background: #007042;
+            background: -webkit-linear-gradient(to bottom right, #007042 0%, #FF847C 0%);
+            background: -moz-linear-gradient(to bottom right, #007042 0%, #FF847C 0%);
+            background: linear-gradient(to bottom right, #007042 0%, #FF847C 0%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* design-concept */
+        section.starbucks-design-concept {
+            margin-top: 5.97vw;
+            padding: 5.970vw 0 0 10.74vw;
+            font-family: 'Roboto', sans-serif;
+            /* background-color: #FEFAEE; */
+        }
+
+        section.starbucks-design-concept h1 {
+            border-top: 2px solid#000000;
+            padding-top: 2.388vw;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 44px;
+        }
+
+        section.starbucks-design-concept h2 {
+            color: #7B7B7B;
+            font-size: 40px;
+            font-weight: 800;
+            margin: 8.35vw 0 5.97vw 0;
+
+        }
+
+        section.starbucks-design-concept h2 span {
+            margin-left: 56.71vw;
+            color: #000000;
+            font-weight: 800;
+        }
+
+        section.starbucks-design-concept p {
+            font-size: 24px;
+            padding-top: 1.194vw;
+        }
+
+        section.starbucks-design-concept ul {
+            margin-top: 2.38vw;
+            font-size: 24px;
+
+
+        }
+
+        section.starbucks-design-concept li {
+            padding-top: 0.29vw;
+            list-style-type: none;
+
+        }
+
+        section.starbucks-design-concept ul li::before {
+            height: 1.19vw;
+            content: "\2022";
+            color: #007042;
+            font-weight: bold;
+            display: inline-block;
+            width: 35px;
+            margin: 0.3em 0 0 -0.5em;
+            font-size: 30px;
+
+            text-align: center;
+
+        }
+
+        section.starbucks-design-concept .font {
+            display: flex;
+            margin-top: 2.388vw;
+            margin-left: 23.8vw;
+            margin-right: 14.92vw;
+            justify-content: space-evenly;
+
+        }
+
+        section.starbucks-design-concept .font p {
+            font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+
+        section.starbucks-design-concept .font p:nth-of-type(2) {
+
+            font-style: italic;
+        }
+
+        section.starbucks-design-concept .font p:nth-of-type(3) {
+            font-weight: bold;
+
+        }
+
+        section.starbucks-design-concept .color-sceme {
+
+            display: flex;
+        }
+
+        section.starbucks-design-concept .color {
+            margin: 2.98vw 2.38vw 0 2.38vw;
+            width: 4.8vw;
+            height: 4.8vw;
+            border-radius: 50%;
+            background-color: #F38B7E;
+        }
+
+        section.starbucks-design-concept .color:nth-of-type(2) {
+            background-color: #F8FDE6;
+        }
+
+        section.starbucks-design-concept .color:nth-of-type(3) {
+            background-color: #007042;
+        }
+
+        section.starbucks-design-concept .color:nth-of-type(4) {
+            background-color: #2F3030;
+        }
+
+        img.grid {
+            width: 80%;
+            height: auto;
+            margin-bottom: 5.97vw;
+        }
+
+
+        @media screen and (max-width:425px) {
+
+            html {
+                overflow-x: hidden;
+            }
+
+            body {
+                font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+                width: 110%;
+                height: 220vw;
+                background: none;
+                margin-left: -10%;
+                /* background-position: 100% -0.5%;
+                 background-image: url('main_image.jpg'); */
+                /* background-size: 130vw;
+                background-position: 100% -0.5%; */
+                /* background-repeat: no-repeat; */
+                overflow-x: hidden;
+            }
+
+            header {
+                margin-top: 10vw;
+                height: 20vw;
+
+            }
+
+            .global-logo {
+                margin-left: 5vw;
+                width: 18vw;
+                height: auto;
+                padding: 0 1.189vw;
+                margin-top: -8vw;
+            }
+
+            .global-logo .logo {
+                width: 100%;
+                height: 100%;
+            }
+
+            .global-nav {
+                height: 20vw;
+            }
+
+            /* hamburger menu */
+            .menu-con {
+                position: absolute;
+                right: -100px;
+                top: -15px;
+                z-index: 100;
+                width: 200px;
+                height: 20vw;
+                /* background: #fff; */
+                /* border-radius: 50% 50% 50% 50%; */
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
+                /* box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF; */
+                cursor: pointer;
+            }
+
+            .hamburger {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                width: 30px;
+                height: 2px;
+                background: #FFC074;
+                display: block;
+                -webkit-transform-origin: center;
+                transform-origin: center;
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
+            }
+
+            .hamburger:after,
+            .hamburger:before {
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: #FFC074;
+            }
+
+            .hamburger:before {
+                top: -10px;
+            }
+
+            .hamburger:after {
+                bottom: -10px;
+            }
+
+            label input {
+                display: none;
+            }
+
+            label input:checked+.menu-con {
+                box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+                border-radius: 0;
+
+            }
+
+            label input:checked+.menu-con .hamburger {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+
+            }
+
+            label input:checked+.menu-con .hamburger:after {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                bottom: 0;
+
+            }
+
+            label input:checked+.menu-con .hamburger:before {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                top: 0;
+
+            }
+
+            label input:checked+.menu-con+.global-nav-links {
+                display: inline-block;
+                margin-left: 0;
+                text-align: center;
+                margin-top: 40vw;
+                opacity: 1;
+            }
+
+            label .global-nav-links {
+                z-index: 200;
+                position: absolute;
+                margin-top: -18vw;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                -webkit-transition: .25s 0s ease-in-out;
+                transition: .25s 0s ease-in-out;
+            }
+
+            label.hamsub a.global-nav-item {
+                margin-bottom: 1em;
+                padding: 4vw;
+                display: block;
+                color: #FFC074;
+                text-decoration: none;
+            }
+
+            /* sub-menu dropdown  */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #FFF9F1;
+                min-width: 50vw;
+                height: 72vw;
+                margin: 0 auto;
+                box-shadow: 0px 8px 16px 0px rgba(159, 159, 159, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a.submenu {
+                font-size: 3.5vw;
+                text-align: center;
+                float: none;
+                color: black;
+                padding: 1vw 1vw;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a.submenu:hover {
+                background-color: #FFF9F1;
+                font-size: 4vw;
+                color: #FFC074;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            img.logo {
+                position: relative;
+                top: 8vw;
+                left: 6%;
+                width: 6.5vw;
+                height: 6.5vw;
+            }
+
+            section.main {
+                width: 100%;
+                height: 30vh;
+                background: url('images/Web1.png');
+                background-size: cover;
+                background-position: 70% 2.5%;
+                background-repeat: no-repeat;
+                margin-top: -15vw;
+            }
+
+            section.main h1 {
+                position: relative;
+                top: 30%;
+                margin: 15vw 0 0 14.13vw;
+                font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+                font-size: 24px;
+                font-weight: 500;
+                color: #FAFFEB;
+
+                letter-spacing: 0.2vw;
+
+            }
+
+            p.button {
+                width: 18.57vw;
+                height: 5.39vw;
+                border-radius: 50px;
+                background-color: #FAFFEB;
+                font-family: 'Noto Serif';
+                font-size: 10px;
+                font-weight: bold;
+                /* button안의 text를 center로 위치시키는 법=> text-align: center; line-height: 40px(=height값!!); */
+                text-align: center;
+                line-height: 5.39vw;
+                margin: 20.34vw 0 0 20.88vw;
+            }
+
+            section.second {
+                width: 100%;
+                height: 600px;
+                background: url('images/Web2.png');
+                background-size: cover;
+                background-position: 80% 3%;
+                background-repeat: no-repeat;
+                margin: -26vw 0 0 2vw;
+            }
+
+            h2.second-title {
+                position: relative;
+
+                font-family: 'Noto Serif';
+                font-size: 18px;
+                color: #302F2E;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            .second-content p {
+                position: relative;
+                font-family: 'Noto Serif';
+                margin-top: -1.196vw;
+                /* width: 225px; */
+                font-size: 15px;
+            }
+
+            section.second img.drink1 {
+
+                /* position: relative; */
+                z-index: 500;
+                top: 85%;
+                left: 40%;
+                margin: 22vw 0 0 75vw;
+                width: 24vw;
+                height: auto;
+            }
+
+            section.second img.drink2 {
+                top: 12%;
+                margin: 20vw 0 0 18vw;
+                width: 24vw;
+                height: 24vw;
+            }
+
+            .second-content:nth-of-type(1) {
+                position: relative;
+                top: -10%;
+                width: 225px;
+                text-align: right;
+                margin: -56vw 49.82vw 0 18vw;
+            }
+
+            .second-content:nth-of-type(2) {
+                position: relative;
+                top: -1%;
+                width: 455px;
+                margin: 10vw 0 0 45vw;
+            }
+
+            .second-content p {
+                font-size: 12px;
+            }
+
+            section.second p.button {
+                margin: 7.22vw 0 0 45vw;
+            }
+
+            section.third {
+                background: url('images/Web3.png');
+                width: 100%;
+                height: 400px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 2.5%;
+                margin: -41vw 0 0 -2vw;
+            }
+
+            section.third img.hand-cup {
+                margin-top: 15vw;
+                margin-left: 70vw;
+                width: 25vw;
+                height: auto;
+            }
+
+            h2.third-title {
+                margin-left: 60vw;
+                font-size: 15px;
+
+
+            }
+
+            section.third p:nth-of-type(1) {
+                font-size: 12px;
+                width: 180px;
+                margin-left: 60vw;
+
+            }
+
+            section.third p.button {
+                margin: 8vw 0 0 60vw;
+            }
+
+            section.last {
+                background: url('images/Web4.png');
+                width: 100%;
+                height: 270px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 68% -2.5%;
+                margin: -49vw 0 0 -2vw;
+            }
+
+            h3.last-title {
+                position: relative;
+                font-size: 15px;
+                top: 60%;
+                margin: -12vw 0 0 14vw;
+            }
+
+            section.last p.gameText {
+                position: relative;
+                top: 60%;
+                font-size: 12px;
+                margin-left: 14vw;
+            }
+
+
+            .text2 {
+                font-size: 10px;
+
+            }
+
+            .paragraph2 {
+                position: relative;
+                top: 28vw;
+                margin-left: 14vw;
+                letter-spacing: -3px;
+
+            }
+
+            section.last p.button {
+                position: relative;
+                top: 60%;
+                background-color: #F38B7E;
+                margin: 7.39vw 0 0 14vw;
+            }
+
+            footer {
+                position: relative;
+                width: 100vw;
+                height: 1vw;
+                top: -3.5%;
+                left: -2%;
+                background-color: #2F3030;
+                /* margin-top: 20vw; */
+                padding: 15%;
+                text-align: center;
+                color: #fff;
+                font-size: 5px;
+                line-height: 10px;
+
+            }
+
+            img.design-logo {
+                width: 14vw;
+                height: auto;
+            }
+
+            section.starbucks-design-concept h1 {
+                font-size: 4.7vw;
+
+            }
+
+            section.starbucks-design-concept h2 {
+                font-size: 4.23vw;
+            }
+
+            section.starbucks-design-concept h2 span {
+                margin-left: 64vw;
+            }
+
+            section.starbucks-design-concept p {
+                font-size: 3.5vw;
+            }
+
+            section.starbucks-design-concept ul {
+                font-size: 4.23vw;
+            }
+
+            section.starbucks-design-concept li {
+                font-size: 3.5vw;
+            }
+
+            img.grid {
+                margin-left: 4vw;
+                width: 90vw;
+                height: auto;
+            }
+
+        }
+
+
+        /* Tablet */
+        @media screen and (min-width:426px) and (max-width:768px) {
+            /* html {
+                overflow-x: hidden;
+            } */
+
+            body {
+                font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+                width: 100%;
+                height: 270vw;
+                background-image: url('images/main_image.jpg');
+                background-size: 180vw;
+                background-position: 65% -0.5%;
+                background-repeat: no-repeat;
+                overflow-x: hidden;
+            }
+
+            .global-logo {
+                width: 10vw;
+                height: auto;
+                padding: 0 1.189vw;
+                margin-top: 30vw;
+            }
+
+            .global-logo .logo {
+                width: 12%;
+                height: auto;
+            }
+
+            /* hamburger menu */
+            .menu-con {
+                position: absolute;
+                right: -100px;
+                top: -100px;
+                z-index: 100;
+                width: 200px;
+                height: 100px;
+                /* background: #fff; */
+                /* border-radius: 50% 50% 50% 50%; */
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
+                /* box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF; */
+                cursor: pointer;
+            }
+
+            .hamburger {
+                position: absolute;
+                top: 150px;
+                left: 35px;
+                width: 30px;
+                height: 3px;
+                background: #FFC074;
+                display: block;
+                -webkit-transform-origin: center;
+                transform-origin: center;
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
+            }
+
+            .hamburger:after,
+            .hamburger:before {
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: #FFC074;
+            }
+
+            .hamburger:before {
+                top: -10px;
+            }
+
+            .hamburger:after {
+                bottom: -10px;
+            }
+
+            label input {
+                display: none;
+            }
+
+            label input:checked+.menu-con {
+                box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+                border-radius: 0;
+
+            }
+
+            label input:checked+.menu-con .hamburger {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+
+            }
+
+            label input:checked+.menu-con .hamburger:after {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                bottom: 0;
+
+            }
+
+            label input:checked+.menu-con .hamburger:before {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                top: 0;
+
+            }
+
+            label input:checked+.menu-con+.global-nav-links {
+                display: inline-block;
+                margin-left: 0;
+                text-align: center;
+                margin-top: 40vw;
+                opacity: 1;
+            }
+
+            label .global-nav-links {
+                z-index: 200;
+                position: absolute;
+                margin-top: -18vw;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                -webkit-transition: .25s 0s ease-in-out;
+                transition: .25s 0s ease-in-out;
+            }
+
+            label.hamsub a.global-nav-item {
+                margin-bottom: 1em;
+                padding: 4vw;
+                display: block;
+                color: #FFC074;
+                font-size: 5.2vw;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            /* sub-menu dropdown  */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #FFF9F1;
+                min-width: 50vw;
+                height: 40vw;
+                margin: 0 auto;
+                box-shadow: 0px 8px 16px 0px rgba(159, 159, 159, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a.submenu {
+                font-size: 1.95vw;
+                text-align: center;
+                float: none;
+                color: black;
+                padding: 0.1vw 1.5vw;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a.submenu:hover {
+                background-color: #FFF9F1;
+                font-size: 2.5vw;
+                color: #FFC074;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            /* 
+            p {
+                font-size: 12px;
+            } */
+
+            img.logo {
+                position: absolute;
+                margin: -29.5vw 0 0 3.58vw;
+                width: 5.5vw;
+                height: 5.5vw;
+            }
+
+            section.main {
+                margin-top: 30vw;
+            }
+
+            section.main h1 {
+                margin: 15vw 0 0 14.13vw;
+                font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+                font-size: 7.8vw;
+                font-weight: 500;
+                color: #FAFFEB;
+
+                letter-spacing: 0.2vw;
+
+            }
+
+
+
+            p.button {
+                width: 18.57vw;
+                height: 5.39vw;
+                border-radius: 50px;
+                background-color: #FAFFEB;
+                font-family: 'Noto Serif';
+                font-size: 1.69vw;
+                font-weight: bold;
+                /* button안의 text를 center로 위치시키는 법=> text-align: center; line-height: 40px(=height값!!); */
+                text-align: center;
+                line-height: 5.39vw;
+                margin: 5.34vw 0 0 20.88vw;
+            }
+
+            .second {
+                margin-top: 49.44vw;
+            }
+
+            h2.second-title {
+                font-family: 'Noto Serif';
+                font-size: 3.12vw;
+                color: #302F2E;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            .second-content p {
+                font-family: 'Noto Serif';
+                margin-top: -1.196vw;
+                /* width: 225px; */
+                font-size: 2.34vw;
+            }
+
+            section.second img.drink1 {
+                position: absolute;
+                margin: -25vw 0 0 62vw;
+                width: 24vw;
+                height: auto;
+            }
+
+            section.second img.drink2 {
+                top: 12%;
+                margin: 8vw 0 0 14vw;
+                width: 24vw;
+                height: auto;
+            }
+
+            /* section.second img:nth-of-type(2) {
+                top: 10%;
+                margin: 13vw 0 0 6.93vw;
+                width: 24vw;
+                height: auto;
+            } */
+
+            .second-content:nth-of-type(1) {
+                width: 50vw;
+                text-align: right;
+                margin: -60vw 0 0 2vw;
+            }
+
+            .second-content:nth-of-type(2) {
+                width: 50vw;
+                margin: 17vw 0 0 45vw;
+            }
+
+            .second-content p {
+                font-size: 2.34vw;
+            }
+
+            section.second p.button {
+                margin: 5.22vw 0 0 45vw;
+            }
+
+            section.third {
+                margin-left: 20vw;
+                margin-top: 1vw;
+            }
+
+            section.third img.hand-cup {
+                margin-top: 3vw;
+                margin-left: 37.7vw;
+                width: 35vw;
+                height: auto;
+            }
+
+            h2.third-title {
+                margin-left: 31vw;
+                font-size: 3.12vw;
+
+
+            }
+
+            section.third p:nth-of-type(1) {
+                font-size: 2.34vw;
+                width: 30vw;
+                margin-left: 31vw;
+
+            }
+
+            section.third p.button {
+                margin-left: 31vw;
+            }
+
+            .paragraph2 {
+                margin: 16.13vw 0 0 10.15vw;
+                /* width: 200px; */
+
+            }
+
+            .text2 {
+                /* letter-spacing: -0.5vw; */
+                font-size: 1.95vw;
+            }
+
+            section.last {
+                margin-top: 28vw;
+                margin-left: -85px;
+            }
+
+            h3.last-title {
+                font-size: 3.12vw;
+                margin: -2.2vw 0 0 22.92vw;
+            }
+
+            section.last p.gameText {
+                font-size: 2.34vw;
+            }
+
+
+            .text2 {
+                font-size: 2.34vw;
+            }
+
+            .paragraph2 {
+                margin: 19.13vw 0 0 19vw;
+
+            }
+
+            section.last p.button {
+                background-color: #F38B7E;
+                margin: 4.39vw 0 0 37vw;
+            }
+
+            footer {
+                margin-top: 18vw;
+                text-align: center;
+                color: #fff;
+                font-size: 1.69vw;
+                line-height: 3vw;
+
+            }
+
+            section.starbucks-design-concept {
+                margin-top: 100px;
+
+            }
+
+            section.starbucks-design-concept h1 {
+                font-size: 24px;
+            }
+
+            section.starbucks-design-concept h2 {
+                font-size: 24px;
+            }
+
+            section.starbucks-design-concept p {
+                font-size: 15px;
+
+            }
+
+            section.starbucks-design-concept ul {
+
+                font-size: 15px;
+            }
+
+            section.starbucks-design-concept ul li::before {
+
+                font-size: 15px;
+            }
+
+            section.starbucks-design-concept .font p {
+                font-size: 20px;
+            }
+        }
+
+        /* Desktop */
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            body {
+                height: 170vw;
+                overflow-x: hidden;
+            }
+
+            header {
+                width: 100vw;
+                height: 20vw;
+            }
+
+            .global-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                width: 100%;
+                height: 10vw;
+                padding: 0;
+            }
+
+            .global-nav-links {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* max-width: 1000px; */
+                height: 5vw 94vw;
+                width: 35.67vw;
+                margin-top: -7vw;
+                /* margin-right: 30vw; */
+                margin-left: 60vw;
+                /* margin-right: 150px; */
+                /* margin: 0 auto; */
+            }
+
+            .global-nav-links a.global-nav-item {
+                margin-right: 4vw;
+                font-size: 1.95vw;
+            }
+
+            .global-logo {
+                width: 10vw;
+                height: auto;
+                padding: 0 1.189vw;
+                margin-top: -1vw;
+            }
+
+            .global-logo .logo {
+                width: 100%;
+                height: 100%;
+            }
+
+            .second-content:nth-of-type(1) {
+                text-align: right;
+                margin: -35vw 53.82vw 0 0;
+            }
+
+            .second-content:nth-of-type(2) {
+                margin: 10vw 0 0 47.84vw;
+            }
+
+            section.second img:nth-of-type(2) {
+                margin: 4.98vw 0 0 20.93vw;
+            }
+
+            .paragraph2 {
+                margin: 17.13vw 0 0 13.15vw;
+
+            }
+
+            .text2 {
+                letter-spacing: -0.1vw;
+                font-size: 2.2vw;
+
+            }
+
+            section.last {
+                margin-top: -0.5vw;
+            }
+
+            h3.last-title {
+
+                margin: -2.2vw 0 0 23.92vw;
+            }
+
+            footer {
+                margin-top: 9.18vw;
+            }
+
+            section.starbucks-design-concept {
+                margin-top: 100px;
+
+            }
+
+            section.starbucks-design-concept h1 {
+                font-size: 20px;
+            }
+
+            section.starbucks-design-concept h2 {
+                font-size: 20px;
+            }
+
+            section.starbucks-design-concept p {
+                font-size: 15px;
+
+            }
+
+            section.starbucks-design-concept ul {
+
+                font-size: 15px;
+            }
+
+            section.starbucks-design-concept ul li::before {
+
+                font-size: 15px;
+            }
+
+            section.starbucks-design-concept .font p {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="global-nav width-setter">
+            <div class="global-logo">
+                <a href="Home.html" class="logo-home-link"> <img class="logo" src="lo.png"></a>
+            </div>
+            <label class="hamsub">
+                <input type="checkbox">
+                <span class="menu-con"><span class="hamburger"></span></span>
+                <div class="global-nav-links">
+                    <a href="Home.html" class="global-nav-item">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="global-nav-item hover-dropdown">Work</a>
+                        <div class="dropdown-content">
+                            <a class="submenu" href="starbucks.html">Starbucks Redesign</a><br>
+                            <a class="submenu" href="#">Indigo Redesign</a><br>
+                            <a class="submenu" href="#">Fragrance Design </a><br>
+                            <a class="submenu" href="#">App Design </a>
+                        </div>
+                    </div>
+                    <!-- <button class="dropbtn">Dropdown</button> -->
+
+                    <a href="#" class="global-nav-item">About</a>
+                    <a href="#" class="global-nav-item">Contact</a>
+                </div>
+            </label>
+        </nav>
+    </header>
+    <div class="brand">
+        <img class="logo" src="images/LOGO.png">
+    </div>
+
+    <section class="main">
+        <h1 class="observe-ready">"To inspire <br>
+            <div class="nurture observe-ready">and nurture <br></div>
+            <div class="spirit observe-ready">the human spirit"</div>
+        </h1>
+        <p class="button"><a href="#">Our coffee</a></p>
+    </section>
+
+    <section class="second">
+        <img class="drink1" src="images/drink1.png">
+        <img class="drink2" src="images/drink2.png.png">
+        <div class="second-content observe-ready">
+            <h2 class="second-title right-align">Kiwi StarFruit </h2>
+            <p>Starfruit- and kiwi- flavoured juice & <br>
+                real kiwi fruit pieces shaken with ice. <br>
+                <span class="greenText">Deliciously refreshing.</span>
+            </p>
+        </div>
+        <div class="second-content observe-ready">
+            <h2 class="second-title">Star Drink</h2>
+            <p>Starfruit- and kiwi-flavoured juice<br>
+                and real kiwi fruit pieces added<br>
+                to coconut beverage and shaken with ice. <br>
+                <span class="greenText">Summer re-imagined.</span>
+            </p>
+        </div>
+        <p class="button"><a href="#">More Menu</a></p>
+    </section>
+    <!-- <section class="header">
+        <h1 class="title">Hayoung Park</h1>
+        <h2 class="discription">
+            <div class="paragraph">
+                <div class="text">W</div>
+                <div class="text">e</div>
+                <div class="text">b &nbsp</div>
+                <div class="text">D</div>
+                <div class="text">e</div>
+                <div class="text">s</div>
+                <div class="text">i</div>
+                <div class="text">g</div>
+                <div class="text">n &nbsp</div>
+                <div class="text">& &nbsp</div>
+                <div class="text">C</div>
+                <div class="text">o</div>
+                <div class="text">d</div>
+                <div class="text">e</div>
+                <div class="text">r</div>
+            </div>
+        </h2>
+    </section> -->
+    <section class="third">
+        <img class="hand-cup" src="images/main_cup_hand.png">
+        <h2 class="third-title  discription">
+            <div class="paragraph observe-ready">
+                <div class="text">M</div>
+                <div class="text">a</div>
+                <div class="text">k</div>
+                <div class="text">i</div>
+                <div class="text">n</div>
+                <div class="text">g &ensp;</div>
+                <div class="text">&nbsp;i</div>
+                <div class="text">n &ensp;</div>
+                <div class="text">&nbsp; t</div>
+                <div class="text">h</div>
+                <div class="text">e &ensp; </div>
+                <div class="text">&nbsp; t</div>
+                <div class="text">r</div>
+                <div class="text">i</div>
+                <div class="text">p</div><br>
+                <div class="text">a</div>
+                <div class="text">t &ensp;</div>
+                <div class="text">&nbsp; y</div>
+                <div class="text">o</div>
+                <div class="text">u</div>
+                <div class="text">r &ensp;</div>
+                <div class="text">&nbsp; h</div>
+                <div class="text">o</div>
+                <div class="text">m</div>
+                <div class="text">e</div>
+            </div>
+        </h2>
+        <p class="observe-ready">Get your favourite food & drinks delivered.</p>
+        <p class="button"> <a href="#">Order Now</a></p>
+    </section>
+
+    <section class="last">
+        <!-- <img class="gradientText" src="gradientText.png"> -->
+        <h2 class="last-titlediscription2">
+            <div class="paragraph2 observe-ready">
+                <div class="text2">S</div>
+                <div class="text2">t</div>
+                <div class="text2">a</div>
+                <div class="text2">r</div>
+                <div class="text2">b</div>
+                <div class="text2">u </div>
+                <div class="text2">c</div>
+                <div class="text2">k</div>
+                <div class="text2">s&ensp;</div>
+                <div class="text2">S</div>
+                <div class="text2">u </div>
+                <div class="text2">m</div>
+                <div class="text2">m</div>
+                <div class="text2">e</div>
+                <div class="text2">r&ensp;</div>
+                <div class="text2">G</div>
+                <div class="text2">a</div>
+                <div class="text2">m</div>
+                <div class="text2">e</div>
+
+            </div>
+        </h2>
+        <h3 class="last-title observe-ready">Get your free drinks</h3>
+        <p class="gameText observe-ready">Play for a chance to win</p>
+        <p class="button"> <a href="#">Play Now</a></p>
+    </section>
+    <footer>
+        Privacy Statement | Terms of Use | Submit Your Idea | Partners |<br>
+        © 2020 Starbucks Coffee Company. All rights reserved.
+    </footer>
+
+    <section class="starbucks-design-concept">
+        <img class="design-logo" src="images/LOGO.png">
+        <h1>Website <br>Redesign Concept</h1>
+        <h2>01 <span>About/Goals</span></h2>
+        <p>This project is a redesign Indigo website.</p>
+        <ul>Goals:
+            <li>Design a modern website to make it consistent with the brand’s identity and logo.</li>
+            <li>Design a stylish promotion/event. </li>
+            <li>Create an intuitive design for users.</li>
+        </ul>
+        <h2>02 <span>Typography</span></h2>
+        <div class="font">
+            <p>Noto Serif</p>
+            <p>Noto Serif</p>
+            <p>Noto Serif</p>
+        </div>
+        <h2>03 <span>Color</span></h2>
+        <div class="color-sceme">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+
+        </div>
+        <h2>04 <span>Grid</span></h2>
+        <img class="grid" src="images/grid.png">
+    </section>
+    <script>
+
+
+        window.addEventListener('load', () => {
+            const observeElems = document.querySelectorAll('.observe-ready');
+            const io = new IntersectionObserver((entries, observer) => {
+                for (let i = 0; i < entries.length; i++) {
+                    if (entries[i].isIntersecting) {
+                        observeElems[entries[i].target.dataset.index].classList.add('active');
+                        console.log(observeElems[entries[0].target.dataset.index]);
+                    } else {
+                        observeElems[entries[i].target.dataset.index].classList.remove('active');
+                    }
+                }
+
+            });
+            observeElems.forEach((item, i) => {
+                item.dataset.index = i;
+                io.observe(item);
+            });
+
+
+
+            let parag = document.querySelector(".paragraph");
+            const io1 = new IntersectionObserver((entries, observer) => {
+
+                for (let i = 0; i < entries.length; i++) {
+                    if (entries[i].isIntersecting) {
+                        for (let i = 0; i < parag.querySelectorAll('.text').length; i++) {
+
+
+                            let _text = parag.querySelectorAll('.text')[i];
+
+
+                            /*TweenMax기본 식!!=>TweenMax.from()(=>시작점)이나 TweenMax.t0()(=>끝점), css에서 animation줄때 쓰는 from과 to와 비슷!!*/
+                            TweenMax.from(_text, 0.5, { //_text=>{..}안의 에니메이션 일어나는 대상,  0.5=> 0.5초동안 이라는 뜻!!
+                                autoAlpha: 0,
+                                // scale:4,
+                                // rotate: Math.random()*360,
+                                delay: Math.random() * 1,
+                                ease: Power3.easeInOut //젤 많이 Power3나 Power4를 씀!!
+                            });
+
+                        }
+                        document.body.onmousemove = function (e) {
+                            document.documentElement.style.setProperty('--x', (e.clientX + window.scrollX) + 'px');
+                            document.documentElement.style.setProperty('--y', (e.clientY + window.scrollY) + 'px');
+                        }
+                    }
+                }
+
+            });
+
+            io1.observe(parag);
+
+
+
+
+
+
+
+
+
+
+            let parag2 = document.querySelector(".paragraph2");
+            const io2 = new IntersectionObserver((entries, observer) => {
+
+                for (let i = 0; i < entries.length; i++) {
+                    if (entries[i].isIntersecting) {
+                        for (let i = 0; i < parag2.querySelectorAll('.text2').length; i++) {
+
+
+                            let _text2 = parag2.querySelectorAll('.text2')[i];
+
+
+                            /*TweenMax기본 식!!=>TweenMax.from()(=>시작점)이나 TweenMax.t0()(=>끝점), css에서 animation줄때 쓰는 from과 to와 비슷!!*/
+                            TweenMax.from(_text2, 0.4, { //_text=>{..}안의 에니메이션 일어나는 대상,0.4,=>0.4,초동안 이라는 뜻!!
+                                autoAlpha: 0,
+                                // scale:4,
+                                // rotate: Math.random()*360,
+                                delay: Math.random() * 1,
+                                ease: Power3.easeInOut //젤 많이 Power3나 Power4를 씀!!
+                            });
+
+                        }
+                        document.body.onmousemove = function (e) {
+                            document.documentElement.style.setProperty('--x', (e.clientX + window.scrollX) + 'px');
+                            document.documentElement.style.setProperty('--y', (e.clientY + window.scrollY) + 'px');
+                        }
+                    }
+                }
+
+            });
+            io2.observe(parag2);
+            // const timerId = setTimeout(() => {
+            //     let parag = document.querySelector(".paragraph");
+            //     for (var i = 0; i < parag.querySelectorAll('.text').length; i++) {
+
+            //         var _text = parag.querySelectorAll('.text')[i];
+
+            //         /*TweenMax기본 식!!=>TweenMax.from()(=>시작점)이나 TweenMax.t0()(=>끝점), css에서 animation줄때 쓰는 from과 to와 비슷!!*/
+            //         TweenMax.from(_text, 1, { //_text=>{..}안의 에니메이션 일어나는 대상, 1=>1초동안 이라는 뜻!!
+            //             autoAlpha: 0,
+            //             // scale:4,
+            //             // rotate: Math.random()*360,
+            //             delay: Math.random() * 1,
+            //             ease: Power3.easeInOut //젤 많이 Power3나 Power4를 씀!!
+            //         });
+            //     }
+            //     document.body.onmousemove = function (e) {
+            //         document.documentElement.style.setProperty('--x', (e.clientX + window.scrollX) + 'px');
+            //         document.documentElement.style.setProperty('--y', (e.clientY + window.scrollY) + 'px');
+            //     }
+            // }, 5000);
+
+
+
+            // let parag = document.querySelector(".paragraph");
+            // for (var i = 0; i < parag.querySelectorAll('.text').length; i++) {
+
+            //     var _text = parag.querySelectorAll('.text')[i];
+
+            //     /*TweenMax기본 식!!=>TweenMax.from()(=>시작점)이나 TweenMax.t0()(=>끝점), css에서 animation줄때 쓰는 from과 to와 비슷!!*/
+            //     TweenMax.from(_text, 1, { //_text=>{..}안의 에니메이션 일어나는 대상, 1=>1초동안 이라는 뜻!!
+            //         autoAlpha: 0,
+            //         // scale:4,
+            //         // rotate: Math.random()*360,
+            //         delay: Math.random() * 1,
+            //         ease: Power3.easeInOut //젤 많이 Power3나 Power4를 씀!!
+            //     });
+            // }
+            // document.body.onmousemove = function (e) {
+            //     document.documentElement.style.setProperty('--x', (e.clientX + window.scrollX) + 'px');
+            //     document.documentElement.style.setProperty('--y', (e.clientY + window.scrollY) + 'px');
+            // }
+        });
+
+
+    </script>
+</body>
+
+</html>
