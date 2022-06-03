@@ -1569,7 +1569,9 @@
 
         /* Tablet */
         @media screen and (min-width:426px) and (max-width:768px) {
-
+  body {
+                overflow-x: hidden;
+            }
             .global-logo {
                 width: 15vw;
                 height: auto;
