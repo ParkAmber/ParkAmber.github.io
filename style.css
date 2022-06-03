@@ -2258,10 +2258,18 @@
                 overflow-x: hidden;
             }
         
-        @media screen and (min-width:4000px) {
+        @media screen and (min-width:2200px) {
             .work-item {
                 /* position: relative; */
                 width: 25vw;
                 height: auto;
             }
+                .dropdown-content a:hover {
+            padding: 5px 10px 5px 10px;
+            background-color: #FFF9F1;
+            color: #FFC074;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
         }
