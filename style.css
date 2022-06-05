@@ -1,4 +1,4 @@
-     body {
+        body {
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
         }
@@ -20,18 +20,20 @@
         .global-nav-links {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             max-width: 1000px;
             height: 5vw 94vw;
             width: 35.67vw;
-            margin-top: -6vw;
-            margin-left: 53.5vw;
+            margin-top: -4vw;
+            margin-left: 56vw;
             /* margin-right: 150px; */
             /* margin: 0 auto; */
         }
 
         .global-nav-links a {
-            font-size: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            margin-right: 100PX;
         }
 
         /* .dropdown-content {
@@ -47,9 +49,10 @@
             position: absolute;
             transition: 5s;
             margin-top: 10px;
-            width: 240px;
+            margin-left: -8px;
+            width: 280px;
             height: 180px;
-            background-color: #FFC074;
+            background-color: #FFF;
             transition: all 5s ease;
             transition-duration: 15s;
             border-radius: 8px;
@@ -57,12 +60,13 @@
 
         .dropdown-content a {
             width: 250px;
-            color: #FFF9F1;
+            color: #FFC074;
             position: relative;
             line-height: 40px;
             top: 10px;
-            left: 20px;
-            font-size: 18px;
+            left: 10px;
+            font-weight: 400;
+            font-size: 15px;
             /* border-bottom: 2px solid #FFF; */
         }
 
@@ -71,16 +75,20 @@
         }
 
         .dropdown:hover .dropdown-content {
+            /* margin-left: 30px; */
             transition-duration: 15s;
             transition: all 5s ease;
             display: block;
         }
 
         .dropdown-content a:hover {
+            transition-duration: 0.5s;
+            margin-left: 2px;
             padding: 5px 10px 5px 10px;
-            background-color: #FFF9F1;
-            color: #FFC074;
-            font-size: 1.18vw;
+            background-color: #FFC074;
+            color: #FFF9F1;
+            font-size: 15px;
+            font-weight: 400;
             border-radius: 10px;
         }
 
@@ -134,22 +142,23 @@
         }
 
         .main-intro .name {
-            font-size: 1.42vw;
+            color: #FFC074;
+            font-size: 60PX;
             font-weight: 500;
-            color: #7B7B7B;
+            /* color: #7B7B7B; */
         }
 
         .main-intro h1 {
             margin-top: 1.189vw;
-            font-size: 4.161vw;
+            font-size: 50PX;
             font-weight: 500;
-            line-height: 5.350vw;
+            line-height: 60PX;
         }
 
         .main-intro p {
             margin-top: 1.189vw;
-            font-size: 1.66vw;
-            font-weight: 500;
+            font-size: 1.4vw;
+            font-weight: 400;
             line-height: 2.49vw;
             color: #7B7B7B;
         }
@@ -169,7 +178,7 @@
         }
 
         .main-contact img {
-            width: 12%;
+            width: 10%;
             height: auto;
         }
 
@@ -985,6 +994,7 @@
         .topBtn {
             position: absolute;
             width: 5.648vw;
+            text-align: center;
             margin-top: 7.728vw;
             margin-left: 83.23vw;
             /* bottom: 10%; */
@@ -1011,6 +1021,7 @@
             transform: rotate(-90deg);
             /* stroke: 2px solid #000; */
             /* stroke: 2px #000; */
+            text-align: center;
             width: 80px;
             height: 30px;
             /* width: 2.378vw;
@@ -1249,7 +1260,7 @@
             .main-intro .name {
                 font-size: 4.7vw;
                 font-weight: 500;
-                color: #7B7B7B;
+                /* color: #7B7B7B; */
             }
 
             .main-intro h1 {
@@ -1569,9 +1580,10 @@
 
         /* Tablet */
         @media screen and (min-width:426px) and (max-width:768px) {
-  body {
+            body {
                 overflow-x: hidden;
             }
+
             .global-logo {
                 width: 15vw;
                 height: auto;
@@ -2056,7 +2068,8 @@
             .main-intro .name {
                 font-size: 1.95vw;
                 font-weight: 500;
-                color: #7B7B7B;
+
+                color: #FFC074;
             }
 
             .work-title {
@@ -2253,23 +2266,17 @@
             }
 
         }
-     @media screen and (min-width:1025px) {
+
+        @media screen and (min-width:1025px) {
             body {
                 overflow-x: hidden;
             }
-        
-        @media screen and (min-width:2200px) {
+        }
+
+        @media screen and (min-width:4000px) {
             .work-item {
                 /* position: relative; */
                 width: 25vw;
                 height: auto;
             }
-                .dropdown-content a:hover {
-            padding: 5px 10px 5px 10px;
-            background-color: #FFF9F1;
-            color: #FFC074;
-            font-size: 20px;
-            border-radius: 10px;
-        }
-
         }
