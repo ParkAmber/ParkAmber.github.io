@@ -1,6 +1,5 @@
    
-       
-        body {
+               body {
 
             font-family: 'Noto Serif', 'Times New Roman', Times, serif;
             width: 100%;
@@ -35,9 +34,9 @@
             height: 100px;
             padding: 0 0.1rem;
             background: rgba(255, 255, 255, 0.543);
-            /* -webkit-backdrop-filter: saturate(180%) blur(15px);
-            -moz-backdrop-filter: saturate(180%) blur(15px);
-            -o-backdrop-filter: saturate(180%) blur(15px); */
+            -webkit-backdrop-filter: saturate(180%) blur(5px);
+            -moz-backdrop-filter: saturate(180%) blur(5px);
+            -o-backdrop-filter: saturate(180%) blur(5px);
             backdrop-filter: saturate(180%) blur(5px);
 
         }
@@ -1582,7 +1581,7 @@
                 align-items: center;
                 justify-content: center;
                 /* max-width: 1000px; */
-                height: 5vw 94vw;
+                height: 5vw;
                 width: 35.67vw;
                 margin-top: -7vw;
                 /* margin-right: 30vw; */
