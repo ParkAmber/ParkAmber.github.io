@@ -224,7 +224,7 @@
         .main-section {
             width: 100%;
             height: 41.89vw;
-            background-image: url('main-image(exported).png');
+                background-image: url('fragrance_images/main-image(exported).png');
             background-repeat: no-repeat;
             background-size: cover;
             border: 1px solid #fff;
