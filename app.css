@@ -922,13 +922,19 @@
     position: absolute;
     left: 16px;
     bottom: 0;
-    top: 149px;
+    top: 150px;
     height: 15px;
     width: 70px;
     border-bottom: 6px solid #FFD833;
     border-radius: 3px;
 }
-            .sticky-container-two {
+ .normal-sectoion-2 .normal-title h3::before,
+ .normal-sectoion-4 .normal-title h3::before,
+ .normal-sectoion-6 .normal-title h3::before {
+                  top: 150px;
+             }
+
+             .sticky-container-two {
                 display: flex;
                 width: 100vw;
             }
