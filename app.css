@@ -1,4 +1,4 @@
-   body {
+     body {
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
         }
@@ -874,6 +874,10 @@
 
         }
 
+        .sticky-container-two {
+            display: none;
+        }
+
         /* @media (min-width: 960px) {
             .width-setter {
                 width: 920px;
@@ -908,9 +912,44 @@
 
         /* Smartphone */
         @media screen and (max-width:425px) {
+
             /* html {
                 overflow-x: hidden;
             } */
+
+            .sticky-container-two {
+                display: flex;
+                width: 100vw;
+            }
+
+
+
+            section.vertical-image-two {
+                margin: 10vw auto;
+                display: inline-block;
+                height: auto;
+                width: 60vw;
+            }
+
+
+            img.nonborder-image {
+                margin-top: 10vw;
+                margin-left: -20vw;
+                width: 140%;
+                max-width: 400%;
+            }
+
+            img.border-image {
+                margin-top: 10vw;
+                margin-left: 0;
+                /* margin-left: 20vw; */
+                width: 100%;
+                border: 2px solid #000;
+            }
+
+            .sticky-container {
+                display: none;
+            }
 
             body {
                 overflow-x: hidden;
@@ -1405,7 +1444,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
             }
 
             .vertical-section {
-                /* width: 30vw; */
+
                 position: relative;
                 z-index: 100;
                 font-size: 9.4vw;
@@ -1417,7 +1456,22 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
                 text-align: center;
             }
 
-            .sticky-container {
+            .text-deco {
+                position: absolute;
+                top: 1250%;
+                font-size: 340px;
+                color: #F7F7F7;
+                font-weight: 700;
+                z-index: -20;
+            }
+
+            img.circle-last {
+                z-index: -10;
+                top: 1240%;
+                left: 30%;
+            }
+
+            /*   .sticky-container {
                 margin-top: -31.7vw;
                 margin-bottom: 2vw;
             }
@@ -1430,7 +1484,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
                 justify-content: space-between;
                 align-items: center;
                 margin: 10px;
-                /* margin-left: -200px; */
+             
             }
 
             section.vertical-image img.vertical-detail2 {
@@ -1455,7 +1509,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
             .arrow {
                 position: relative;
                 left: -2.35vw;
-            }
+            } */
         }
 
         /* Tablet */
