@@ -250,6 +250,7 @@
             color: #7B7B7B;
             margin-top: 1vw;
             width: 40%;
+             line-height:20px;
         }
 
         /* normal-content */
@@ -916,7 +917,17 @@
             /* html {
                 overflow-x: hidden;
             } */
-
+.normal-title h3::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    top: 149px;
+    height: 15px;
+    width: 70px;
+    border-bottom: 6px solid #FFD833;
+    border-radius: 3px;
+}
             .sticky-container-two {
                 display: flex;
                 width: 100vw;
