@@ -132,6 +132,7 @@
 
         .dropdown-content a:hover,
         .contact-dropdown-content a:hover {
+           transition-duration: 0.5s;
             padding: 5px 10px 5px 10px;
             background-color: #FFC074;
             color: #FFC074;
@@ -785,7 +786,7 @@
             /* hamburger menu */
             .menu-con {
                 position: absolute;
-                right: -100px;
+                right: -130px;
                 top: -15px;
                 z-index: 100;
                 width: 200px;
@@ -893,7 +894,7 @@
                 text-decoration: none;
             }
 
-           /*  */
+          /*  */
             /* sub-menu dropdown  */
             .dropdown-content,
             .contact-dropdown-content {
@@ -907,8 +908,8 @@
                 z-index: 1;
             }
 
-            .dropdown-content a,
-            .contact-dropdown-content a {
+            .dropdown-content a.submenu,
+            .contact-dropdown-content a.submenu {
                 font-size: 3.5vw;
                 text-align: center;
                 float: none;
@@ -919,12 +920,12 @@
                 text-align: left;
             }
 
-            .contact-dropdown-content a {
+            .contact-dropdown-content a.submenu {
                 padding-left: 3vw;
             }
 
-            .dropdown-content a:hover,
-            .contact-dropdown-content a:hover {
+            .dropdown-content a.submenu:hover,
+            .contact-dropdown-content a.submenu:hover {
                 background-color: #FFF9F1;
                 font-size: 4vw;
                 color: #FFC074;
@@ -943,6 +944,7 @@
             }
 
             /*  */
+
             img.logo {
                 position: relative;
                 top: 8vw;
