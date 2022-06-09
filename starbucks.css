@@ -1330,7 +1330,7 @@
                 display: inline-block;
                 margin-left: 0;
                 text-align: center;
-                margin-top: 40vw;
+                margin-top: 30vw;
                 opacity: 1;
             }
 
@@ -1357,7 +1357,7 @@
                 text-decoration: none;
             }
 
-                 /*  */
+               /*  */
             /* sub-menu dropdown  */
             .dropdown-content,
             .contact-dropdown-content {
@@ -1371,8 +1371,8 @@
                 z-index: 1;
             }
 
-            .dropdown-content a,
-            .contact-dropdown-content a {
+            .dropdown-content a.submenu,
+            .contact-dropdown-content a.submenu {
                 font-size: 1.95vw;
                 text-align: center;
                 float: none;
@@ -1383,8 +1383,8 @@
                 text-align: left;
             }
 
-            .dropdown-content a:hover,
-            .contact-dropdown-content a:hover {
+            .dropdown-content a.submenu:hover,
+            .contact-dropdown-content a.submenu:hover {
                 background-color: #FFF9F1;
                 font-size: 2.5vw;
                 color: #FFC074;
