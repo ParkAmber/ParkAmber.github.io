@@ -78,7 +78,9 @@
             font-size: 15px;
             /* border-bottom: 2px solid #FFF; */
         }
-
+.dropdown-content a.afirst{ 
+          color: #FFC074;
+}
         .contact-dropdown-content a {
             width: 250px;
             color: #FFC074;
@@ -91,7 +93,9 @@
             font-size: 15px;
             /* border-bottom: 2px solid #FFF; */
         }
-
+.contact-dropdown-content a.afirst{ 
+          color: #FFC074;
+} 
         .dropdown,
         .contact-dropdown {
             transition-duration: 15s;
