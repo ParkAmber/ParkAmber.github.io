@@ -1,4 +1,4 @@
-        body {
+          body {
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
         }
@@ -25,7 +25,7 @@
             height: 5vw 94vw;
             width: 35.67vw;
             margin-top: -4vw;
-            margin-left: 56vw;
+            margin-left: 62vw;
             /* margin-right: 150px; */
             /* margin: 0 auto; */
         }
@@ -132,13 +132,14 @@
         }
 
         .main-image {
-            width: 41.61vw;
-            height: 41.61vw;
+            width: 50vw;
+            height: 40vw;
+            margin-left: 2vw;
             background-color: #EDEDED;
         }
 
         .main-content {
-            padding: 4.161vw 0 0 5.945vw;
+            padding: 4.161vw 0 0 5vw;
         }
 
         .main-intro .name {
@@ -164,6 +165,7 @@
         }
 
         .main-contact {
+            position: absolute;
             margin-top: 2.378vw;
         }
 
@@ -175,6 +177,7 @@
 
         .social-icons {
             margin-top: 1.189vw;
+            margin-left: -0.5vw;
         }
 
         .main-contact img {
@@ -190,10 +193,11 @@
         .work-title {
             /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
             margin: 0 auto;
-            width: 10.10vw;
+            width: 11vw;
             text-align: center;
             font-size: 3.56vw;
-            font-weight: bold;
+            font-weight: 600;
+            text-transform: uppercase;
             padding-bottom: 0.59vw;
             /* border-bottom: 100px; */
             border-bottom: 5px solid #FFC074;
@@ -291,12 +295,12 @@
             position: absolute;
             /* stroke: 2px solid #000; */
             /* stroke: 2px #000; */
-            width: 90px;
-            height: 35px;
+            width: 25px;
+            height: 40px;
             /* width: 2.378vw;
             height: 1.5px; */
-            left: -50%;
-            top: 15%;
+            left: 40%;
+            top: 25%;
             /* margin: -50px 0 0 25px; */
             /* padding: 0;
             font-weight: normal;
@@ -706,10 +710,11 @@
             position: relative;
             /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
             margin: 0 auto;
-            width: 10.10vw;
+            width: 11vw;
             text-align: center;
             font-size: 3.56vw;
-            font-weight: bold;
+            text-transform: uppercase;
+            font-weight: 600;
             padding-top: 7.13vw;
             padding-bottom: 0.59vw;
             /* border-bottom: 100px; */
@@ -793,10 +798,11 @@
         .contact-title {
             /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
             margin: 0 auto;
-            width: 14.863vw;
+            width: 18vw;
             text-align: center;
             font-size: 3.567vw;
-            font-weight: bold;
+            text-transform: uppercase;
+            font-weight: 600;
             padding-top: 5.35vw;
             padding-bottom: 0.594vw;
             /* border-bottom: 100px; */
@@ -1014,7 +1020,7 @@
 
         .topBtn:before {
             content: '';
-            background: url(arrow-hover.png);
+            background: url(arrow-top.png);
             background-size: 50% 50%;
             background-repeat: no-repeat;
             position: absolute;
@@ -1022,12 +1028,12 @@
             /* stroke: 2px solid #000; */
             /* stroke: 2px #000; */
             text-align: center;
-            width: 80px;
-            height: 30px;
+            width: 35px;
+            height: 50px;
             /* width: 2.378vw;
             height: 1.5px; */
             margin-top: -4vw;
-            margin-left: 3vw;
+            margin-left: 5vw;
             left: -50%;
             top: 15%;
             /* content: '';
@@ -1291,6 +1297,10 @@
                 height: auto;
             }
 
+            .work {
+                margin-top: 40vw;
+            }
+
             .work-title {
                 /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
                 /* margin: 0 auto;
@@ -1345,8 +1355,8 @@
 
             .circle:before {
                 background-size: 50% 50%;
-                width: 80px;
-                height: 30px;
+                width: 25px;
+                height: 40px;
             }
 
             .adobe-tools {
@@ -1388,7 +1398,7 @@
                 width: 30vw;
                 text-align: center;
                 font-size: 9.4vw;
-                font-weight: bold;
+                /* font-weight: bold; */
                 padding-top: 7.13vw;
                 padding-bottom: 0.59vw;
                 /* border-bottom: 100px; */
@@ -1472,10 +1482,10 @@
             .contact-title {
                 /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
                 margin: 0 auto;
-                width: 40vw;
+                width: 47vw;
                 text-align: center;
                 font-size: 9.4vw;
-                font-weight: bold;
+                /* font-weight: bold; */
                 padding-top: 10vw;
                 padding-bottom: 0.594vw;
                 /* border-bottom: 100px; */
@@ -1547,10 +1557,10 @@
             }
 
             .topBtn:before {
-                width: 60px;
-                height: 25px;
-                margin-top: -13vw;
-                margin-left: 13vw;
+                width: 25px;
+                height: 40px;
+                margin-top: -11vw;
+                margin-left: 19vw;
             }
 
             .topBtn {
@@ -1744,19 +1754,19 @@
             }
 
             .main-content {
-                padding: 0.5vw 0 0 2vw;
+                padding: 0 0 0 2vw;
                 width: 50vw;
             }
 
             .main-intro .name {
-                font-size: 1.95vw;
+                font-size: 2.94vw;
                 /* font-weight: 500;
                 color: #7B7B7B; */
             }
 
             .main-intro h1 {
                 /* margin-top: 1.189vw; */
-                font-size: 5.2vw;
+                font-size: 5vw;
                 width: 150%;
                 line-height: 6vw;
 
@@ -1775,12 +1785,12 @@
             }
 
             .main-contact img {
-                width: 16%;
+                width: 14%;
                 height: auto;
             }
 
             .work-title {
-                width: 15vw;
+                width: 17vw;
                 font-size: 5.2vw;
                 border-bottom: 3px solid #FFC074;
             }
@@ -1825,8 +1835,8 @@
 
             .circle:before {
                 background-size: 50% 50%;
-                width: 80px;
-                height: 30px;
+                /* width: 80px;
+                height: 30px; */
             }
 
 
@@ -1890,7 +1900,7 @@
                 position: relative;
                 /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
                 margin: 0 auto;
-                width: 15vw;
+                width: 17vw;
                 text-align: center;
                 font-size: 5.2vw;
                 font-weight: bold;
@@ -1928,7 +1938,7 @@
 
             .contact-title {
                 font-size: 5.2vw;
-                width: 22vw;
+                width: 26vw;
                 border-bottom: 3px solid #FFC074;
             }
 
@@ -1952,10 +1962,10 @@
             }
 
             .topBtn:before {
-                width: 60px;
-                height: 25px;
+                /* width: 60px;
+                height: 25px; */
                 margin-top: -7vw;
-                margin-left: 8vw;
+                margin-left: 11vw;
             }
 
             .text-1 span {
@@ -2003,10 +2013,10 @@
                 cursor: pointer;
             }
 
-            .topBtn:after {
+            /* .topBtn:after {
                 left: -118%;
                 top: 45%;
-            }
+            } */
         }
 
         /* Desktop */
@@ -2075,13 +2085,13 @@
             .work-title {
                 /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
                 margin: 0 auto;
-                width: 11vw;
+                width: 12vw;
                 text-align: center;
                 font-size: 3.9vw;
-                font-weight: bold;
+                /* font-weight: bold; */
                 padding-bottom: 0.59vw;
                 /* border-bottom: 100px; */
-                border-bottom: 5px solid #FFC074;
+                border-bottom: 3px solid #FFC074;
             }
 
             .work-item {
@@ -2125,22 +2135,12 @@
             .circle:before {
                 background-size: 50% 50%;
                 margin-top: 0.2vw;
-                width: 80px;
-                height: 30px;
+                /* width: 80px;
+                height: 30px; */
             }
 
 
-            .work-title {
-                /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
-                margin: 0 auto;
-                width: 10.10vw;
-                text-align: center;
-                font-size: 3.56vw;
-                font-weight: bold;
-                padding-bottom: 0.59vw;
-                /* border-bottom: 100px; */
-                border-bottom: 5px solid #FFC074;
-            }
+
 
             .type {
                 position: absolute;
@@ -2170,27 +2170,27 @@
                 position: relative;
                 /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
                 margin: 0 auto;
-                width: 11vw;
+                width: 12vw;
                 text-align: center;
                 font-size: 3.9vw;
-                font-weight: bold;
+                /* font-weight: bold; */
                 padding-top: 7.13vw;
                 padding-bottom: 0.59vw;
                 /* border-bottom: 100px; */
-                border-bottom: 5px solid #FFF9F1;
+                border-bottom: 3px solid #FFF9F1;
             }
 
             .contact-title {
                 /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
                 margin: 0 auto;
-                width: 17vw;
+                width: 19vw;
                 text-align: center;
                 font-size: 3.9vw;
-                font-weight: bold;
+                /* font-weight: bold; */
                 padding-top: 5.35vw;
                 padding-bottom: 0.594vw;
                 /* border-bottom: 100px; */
-                border-bottom: 5px solid #FFC074;
+                border-bottom: 3px solid #FFC074;
             }
 
             .contact h2 {
@@ -2259,10 +2259,10 @@
             }
 
             .topBtn:before {
-                width: 60px;
-                height: 25px;
+                /* width: 60px;
+                height: 25px; */
                 margin-top: -5vw;
-                margin-left: 7vw;
+                margin-left: 9vw;
             }
 
         }
