@@ -73,21 +73,6 @@
             padding-bottom: 10px;
         }
 
-        .dropdown-content,
-        .contact-dropdown-content {
-            display: none;
-            position: absolute;
-            transition: 5s;
-            margin-top: 10px;
-            margin-left: -8px;
-            width: 280px;
-            height: 190px;
-            /* background-color: #FFF; */
-            transition: all 5s ease;
-            transition-duration: 15s;
-            border-radius: 8px;
-        }
-
         .contact-dropdown-content img {
             position: relative;
             width: 15%;
@@ -95,19 +80,32 @@
             left: 0;
         }
 
-        .dropdown-content a {
+        .dropdown-content,
+        .contact-dropdown-content {
+            display: none;
+            position: absolute;
+            transition: 5s;
+            margin-top: 10px;
+            width: 240px;
+            height: 180px;
+            /* background-color: rgba(255, 255, 255, 0.687); */
+            transition: all 5s ease;
+            transition-duration: 15s;
+            border-radius: 8px;
+        }
+
+        .dropdown-content a.submenu {
             width: 250px;
             color: #FFC074;
             position: relative;
             line-height: 40px;
             top: 10px;
-            left: 10px;
-            font-weight: 400;
+            left: 5px;
             font-size: 15px;
             /* border-bottom: 2px solid #FFF; */
         }
 
-        .contact-dropdown-content a {
+        .contact-dropdown-content a.submenu {
             width: 250px;
             color: #FFC074;
             position: relative;
@@ -127,7 +125,6 @@
 
         .dropdown:hover .dropdown-content,
         .contact-dropdown:hover .contact-dropdown-content {
-            /* margin-left: 30px; */
             transition-duration: 15s;
             transition: all 5s ease;
             display: block;
@@ -135,10 +132,9 @@
 
         .dropdown-content a:hover,
         .contact-dropdown-content a:hover {
-            transition-duration: 0.5s;
-            margin-left: 2px;
             padding: 5px 10px 5px 10px;
             background-color: #FFC074;
+            color: #FFC074;
             color: #FFF9F1;
             font-size: 15px;
             font-weight: 400;
@@ -146,10 +142,11 @@
         }
 
         .contact-dropdown-content a:hover {
-            padding: 8px 10px 5px 5px;
+            padding: 8px 10px 8px 5px;
         }
 
         /*  */
+
         /* .dropdown:checked .dropdown-content {
             display: block;
             margin-left: 0;
