@@ -248,7 +248,7 @@
 
         .circle:before {
             content: '';
-            background: url(arrow.png);
+            background: url(images/arrow.png);
             background-size: 50% 50%;
             background-repeat: no-repeat;
             position: absolute;
