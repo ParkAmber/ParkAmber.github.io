@@ -1575,6 +1575,42 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
 
         /* Tablet */
         @media screen and (min-width:426px) and (max-width:768px) {
+                       /* vertical-edit */
+            .sticky-container-two {
+                display: flex;
+                width: 100vw;
+            }
+
+
+
+            section.vertical-image-two {
+                margin: 10vw auto;
+                display: inline-block;
+                height: auto;
+                width: 40vw;
+            }
+
+
+            img.nonborder-image {
+                margin-top: 10vw;
+                margin-left: -18vw;
+                width: 140%;
+                max-width: 400%;
+            }
+
+            img.border-image {
+                margin-top: 10vw;
+                margin-left: 0;
+                /* margin-left: 20vw; */
+                width: 80%;
+                border: 2px solid #000;
+            }
+
+            .sticky-container {
+                display: none;
+            }
+
+            /*  */
             body {
                 overflow-x: hidden;
             }
@@ -1983,7 +2019,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
                 font-size: 340px;
                 color: #F7F7F7;
                 font-weight: 700;
-                /* z-index: -20; */
+                z-index: -20;
             }
 
             .text-deco:nth-of-type(1) {
@@ -2053,6 +2089,44 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
         }
 
         @media screen and (min-width:769px) and (max-width:1024px) {
+                /* vertical-edit */
+
+
+            .sticky-container-two {
+                display: flex;
+                width: 100vw;
+            }
+
+
+
+            section.vertical-image-two {
+                margin: 10vw auto;
+                display: inline-block;
+                height: auto;
+                width: 40vw;
+            }
+
+
+            img.nonborder-image {
+                margin-top: 10vw;
+                margin-left: -10vw;
+                width: 120%;
+                max-width: 400%;
+            }
+
+            img.border-image {
+                margin-top: 10vw;
+                margin-left: 5vw;
+                /* margin-left: 20vw; */
+                width: 70%;
+                border: 2px solid #000;
+            }
+
+            .sticky-container {
+                display: none;
+            }
+
+            /*  */
                   .contact-dropdown-content img {
                 position: relative;
                 width: 15%;
@@ -2361,7 +2435,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
                 font-size: 340px;
                 color: #F7F7F7;
                 font-weight: 700;
-                /* z-index: -20; */
+                z-index: -20;
             }
 
             img.circle-last {
