@@ -1593,11 +1593,12 @@
             transform: translate(0, 0);
         }
 
-        /* design-concept */
+         /* design-concept */
         section.design-concept {
             padding: 5.97vw 0 0 10.75vw;
             font-family: 'Roboto', sans-serif;
             background-color: #FEFAEE;
+            position: relative;
         }
 
         section.design-concept h1 {
@@ -1698,11 +1699,54 @@
         }
 
         img.grid {
+            z-index: 100;
+            position: relative;
+
             width: 80%;
             height: auto;
             margin-bottom: 100px;
         }
 
+        .design-rect1,
+        .design-rect2,
+        .design-line1,
+        .design-line2,
+        .design-logo2 {
+            width: 20vw;
+            /* z-index: -100; */
+            /* position: absolute; */
+        }
+
+        .design-rect1 {
+            top: 5vw;
+            left: 70vw;
+            position: absolute;
+            width: 50%;
+            /* z-index: -10; */
+        }
+
+        .design-rect2 {
+            top: 125vw;
+            left: -10vw;
+            position: absolute;
+            width: 50%;
+            /* z-index: -10; */
+        }
+
+        .design-line1 {
+            top: 12vw;
+            left: 10vw;
+            position: absolute;
+            width: 10%;
+        }
+
+        .design-line2 {
+            top: 135vw;
+            left: 70vw;
+            position: absolute;
+            transform: rotate(180deg);
+            width: 10%;
+        }
 
         @media screen and (max-width:425px) {
 
