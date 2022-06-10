@@ -779,6 +779,7 @@
         .skills-design,
         .skills-coding,
         .skills-photography {
+                    height: 30vw;
             width: 28.53vw;
             margin: 8.917vw auto;
             padding: 2.972vw;
@@ -811,9 +812,10 @@
 
         .skills-content p {
             font-size: 1.07vw;
-            line-height: 1.42vw;
+               line-height: 2vw;
             margin: 1.78vw 1.78vw;
             text-align: center;
+           color: #7B7B7B;
         }
 
 
@@ -1477,9 +1479,12 @@
             .skills-design,
             .skills-coding,
             .skills-photography {
-                width: 60vw;
-                margin: 8.917vw auto;
-                padding: 2.972vw;
+                 width: 75vw;
+                height: 85vw;
+                margin: 4.917vw auto;
+                /* margin: 25vw auto; */
+                /* border-bottom: 2px solid #EDEDED; */
+                /* padding: 2.972vw; */
             }
 
             span.num {
@@ -1503,7 +1508,8 @@
 
             .skills-design,
             .skills-coding {
-                border: none;
+                  border-right: none;
+                border-bottom: 2px solid #EDEDED;
             }
 
             .skills-content p {
