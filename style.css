@@ -365,7 +365,7 @@
 
         /* .work-desc a:hover .circle::after { */
             {
-            background: url(arrow-hover.png);
+            background: url(images/arrow-hover.png);
             background-size: 50% 50%;
             background-repeat: no-repeat;
         }
@@ -888,7 +888,7 @@
         }
 
         .email-send a:hover .circle::before {
-            background: url(arrow-hover.png);
+            background: url(images/arrow-hover.png);
             background-size: 50% 50%;
             background-repeat: no-repeat;
         }
