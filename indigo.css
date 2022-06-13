@@ -1747,6 +1747,13 @@
             transform: rotate(180deg);
             width: 10%;
         }
+      img.design-logo2 {
+            position: absolute;
+            /* margin-top:5vw; */
+            margin: 15vw 0 0 15vw;
+            width: 40vw;
+            opacity: 0.03;
+        }
 
         @media screen and (max-width:425px) {
 
