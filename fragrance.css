@@ -2554,7 +2554,7 @@ background-color: #FDEAE9; */
         @media screen and (min-width:769px) and (max-width:1024px) {
               .contact-dropdown-content img {
                 position: relative;
-                width: 15%;
+                width: 13%;
                 top: 1.5vw;
                 left: 0;
             }
