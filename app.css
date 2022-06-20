@@ -341,7 +341,7 @@
         .normal-sectoion-6 .normal-title h3::before {
             content: "";
             position: absolute;
-            left: 1580px;
+            left: 1585px;
             bottom: 0;
             top: 150px;
             height: 15px;
@@ -1450,7 +1450,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
             .normal-title h3::before {
                 /* content: "";
                 position: absolute; */
-                left: 12.23vw;
+                left: 14.23vw;
                 /* bottom: 0;
                 top: 180px;
                 height: 15px;
@@ -1461,23 +1461,24 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
 
             .normal-sectoion-2 .normal-content-detail .normal-title h3::before,
             .normal-sectoion-3 .normal-content-detail .normal-title h3::before {
-                left: 34.11vw;
+                left: 37vw;
             }
 
             .normal-sectoion-4 .normal-content-detail .normal-title h3::before {
-                left: 36vw;
+               margin-top: 1vw;
+               left: 38vw;
             }
 
             .normal-sectoion-5 .normal-content-detail .normal-title h3::before {
-                left: 34.11vw;
+                left: 35.5vw;
             }
 
             .normal-sectoion-6 .normal-content-detail .normal-title h3::before {
-                left: 24vw;
+                left: 25.5vw;
             }
 
             .normal-sectoion-7 .normal-content-detail .normal-title h3::before {
-                left: 26vw;
+                left: 28vw;
             }
 
             .normal-dec .user-flow {
@@ -2131,7 +2132,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
             /*  */
                   .contact-dropdown-content img {
                 position: relative;
-                width: 15%;
+                width: 13%;
                 top: 1.5vw;
                 left: 0;
             }
