@@ -2238,7 +2238,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
                 position: absolute;
                 left: 5px;
                 bottom: 0;
-                top: 180px;
+                top: 150px;
                 height: 15px;
                 width: 70px;
 
@@ -2252,9 +2252,9 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
             .normal-sectoion-6 .normal-title h3::before {
                 content: "";
                 position: absolute;
-                left: 91.4vw;
+                left: 93w;
                 bottom: 0;
-                top: 180px;
+                top: 155px;
                 height: 15px;
                 width: 70px;
                 border-bottom: 6px solid #FFD833;
