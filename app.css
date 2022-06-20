@@ -2005,15 +2005,17 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
             }
 
             .normal-sectoion-2 .normal-content-detail .normal-title h3::before {
-                left: 89vw;
+                left: 90.5vw
             }
 
             .normal-sectoion-4 .normal-content-detail .normal-title h3::before {
-                left: 89vw;
+                   left: 90.5vw;
+                   margin-top: 0.6vw;
             }
 
             .normal-sectoion-6 .normal-content-detail .normal-title h3::before {
-                left: 89vw;
+                left: 90.5vw;
+                margin-top: 0.6vw;
             }
 
             .text-deco {
