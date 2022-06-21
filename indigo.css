@@ -46,7 +46,7 @@
             max-width: 1000px;
             height: 5vw 94vw;
             width: 35.67vw;
-           
+            margin-top: -3vw;
             margin-left: 62vw;
             backdrop-filter: saturate(180%) blur(15px);
 
