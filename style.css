@@ -817,6 +817,10 @@
             text-align: center;
             color: #7B7B7B;
         }
+
+        p.description {
+            font-weight: 600;
+        }
    p.tools {
               font-size: 1.3vw;
             color: #FFC074;
