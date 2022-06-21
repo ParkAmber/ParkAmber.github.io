@@ -1485,7 +1485,7 @@
             .skills-coding,
             .skills-photography {
                  width: 75vw;
-                height: 85vw;
+                   height: 100vw;
                 margin: 4.917vw auto;
                 /* margin: 25vw auto; */
                 /* border-bottom: 2px solid #EDEDED; */
@@ -1997,7 +1997,11 @@
                 font-size: 1.95vw;
                 color: #FFC074;
             }
-
+.skills-design,
+            .skills-coding,
+            .skills-photography {
+                height: 50vw;
+            }
             .skills-photography span.num {
                 margin-left: -21vw;
             }
