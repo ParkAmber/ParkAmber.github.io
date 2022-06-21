@@ -1532,7 +1532,10 @@
                 margin: 5vw 1.78vw;
                 text-align: center;
             }
-
+           p.description {
+            width:65vw;
+                  }
+                  
             .html p,
             .css p,
             .js p {
