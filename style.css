@@ -762,7 +762,7 @@
             align-items: center;
             justify-content: space-between;
             margin: 4.756vw auto;
-            padding-bottom: 2.972vw;
+          padding-bottom: 2vw;
             /* margin-top: 60px; */
             width: 90%;
             height: 100%;
@@ -779,7 +779,7 @@
         .skills-design,
         .skills-coding,
         .skills-photography {
-                    height: 30vw;
+                       height: 35vw;
             width: 28.53vw;
             margin: 8.917vw auto;
             padding: 2.972vw;
@@ -811,13 +811,17 @@
         }
 
         .skills-content p {
-            font-size: 1.07vw;
-               line-height: 2vw;
-            margin: 1.78vw 1.78vw;
+          font-size: 1.07vw;
+            line-height: 1.8vw;
+            margin: 1vw 1.78vw 0 1.78vw;
             text-align: center;
-           color: #7B7B7B;
+            color: #7B7B7B;
         }
-
+   p.tools {
+              font-size: 1.3vw;
+            color: #FFC074;
+            font-weight: 600;
+        }
 
 
 
