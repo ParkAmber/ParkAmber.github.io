@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="illust.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;800;900&family=Smooch+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+  </head>
+
+<body>
+    <header>
+        <nav class="global-nav width-setter">
+            <div class="global-logo">
+                <a href="Home.html" class="logo-home-link"> <img class="logo" src="lo.png"></a>
+            </div>
+            <label>
+                <input type="checkbox">
+                <span class="menu-con"><span class="hamburger"></span></span>
+                <div class="global-nav-links">
+                    <a href="Home.html" class="global-nav-item">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="global-nav-item hover-dropdown">Work</a>
+                        <div class="dropdown-content">
+                            <a href="starbucks.html">Starbucks Redesign</a><br>
+                            <a href="#">Indigo Redesign</a><br>
+                            <a href="#">Fragrance Design </a><br>
+                            <a href="#">App Design </a><br>
+                            <a href="#">Illust Design </a>
+                        </div>
+                    </div>
+                    <!-- <button class="dropbtn">Dropdown</button> -->
+
+                    <a href="#" class="global-nav-item">About</a>
+                    <div class="contact-dropdown">
+                        <a href="#" class="global-nav-item hover-dropdown">Contact</a>
+                        <div class="contact-dropdown-content">
+                            <a href="#"><img src="social_mail2.png" class="nav-contact-img">Email</a><br>
+                            <a href="#"><img src="social_linkden.png" class="nav-contact-img">Linkedin</a><br>
+                            <a href="#"><img src="social_insta.png" class="nav-contact-img">Instagram</a><br>
+                            <a href="#"> <img src="social_behance.png" class="nav-contact-img"> Behance</a>
+                        </div>
+                    </div>
+                </div>
+            </label>
+        </nav>
+    </header>
+    <section class="illust-portfolio">
+        <div class="illust-main">
+            <h1 class="illust-title">Illustration Portfolio</h1>
+            <h2 class="illust-subtitle">Illustration <br>
+                & Logo design</h2>
+        </div>
+        <img class="illust-day-night" src="illust-section-main.png">
+        <div class="scroll-section" id="scroll-section-3">
+            <canvas class="image-blend-canvas" width="1920" height="1080"></canvas>
+        </div>
+        <div class="illust-day">
+            <img class="illust-day-mockup" src="illust-bag1.png">
+            <div class="illust-item-content">
+                <p class="observer-ready">House - Day </p>
+                <img class="illust-item1 observer-ready" src="illust-day.png">
+            </div>
+        </div>
+        <div class="illust-night">
+            <div class="illust-item-content">
+                <p class="observer-ready">House - Night </p>
+                <img class="illust-item2 observer-ready" src="illust-night.png">
+            </div>
+            <img class="illust-night-mockup" src="illust-bag2.png">
+        </div>
+        <div class="illust-item-display">
+            <h1 class="display-title">Mock-Up</h1>
+            <img class="item observer-ready" src="illust-item.png">
+        </div>
+    </section>
+
+    <section class="logo-portfolio">
+        <div class="logo-main">
+            <h1 class="logo-title">Logo Design</h1>
+        </div>
+        <div class="logo-concept">
+            <h1 class="logo-concept-title">Logo Concept</h1>
+            <img class="logo-concept-image observer-ready" src="logo-concept.png">
+        </div>
+        <div class="logo-second-section">
+            <div class="logo-proportion">
+                <h1 class="logo-proportion-title">Logo Proportion</h1>
+                <img class="logo-grid observer-ready" src="logo-grid.png">
+            </div>
+            <div class="typo-color">
+                <h1 class="typo-color-title">Typography & Color Scheme</h1>
+                <div class="typo">
+                    <div class="typo-reg">
+                        <p class="typo-reg-title observer-ready">Smooch Sans</p>
+                        <p class="observer-ready">Regular</p>
+                        <p class="observer-ready">Haffee for ur happiness</p>
+                    </div>
+                    <div class="typo-med">
+                        <p class="typo-med-title observer-ready">Smooch Sans</p>
+                        <p class="typo-med-content observer-ready">Medium</p>
+                        <p class="typo-med-content observer-ready">Haffee for ur happiness</p>
+                    </div>
+                </div>
+                <div class="color">
+                    <h2 class="color-title">Color Scheme</h2>
+                    <img class="color-image observer-ready" src="color-scheme.png">
+                </div>
+            </div>
+        </div>
+        <div class="logo-legibility">
+            <h1 class="logo-legibility-title">Logo Legibility</h1>
+            <div class="leg-item">
+                <img class="leg1 observer-ready" src="logo-legibility1.png">
+                <img class="leg2 observer-ready" src="logo-legibility2.png">
+                <img class="leg3 observer-ready" src="logo-legibility3.png">
+            </div>
+        </div>
+        <div class="logo-mockup">
+            <h1 class="logo-mockup-title">Mock-Up</h1>
+            <div class="logo-mockup-display">
+                <div class="display-item">
+                    <img class="display-item-image observer-ready" src="logo-mockup1.png">
+                </div>
+                <div class="display-item">
+                    <div class="logo-content">
+                        <div class="brand-name">
+                            <h1 class="observer-ready">What is Haffee?</h1>
+                            <p class="observer-ready">‘Haffee’ represents both Coffee and Happy. And the cup in the
+                                logo
+                                represents a smile.<br>
+                                It is a coffee brand that will provide high-quality coffee.
+                            </p>
+                        </div>
+                        <div class="brand-mission">
+                            <h1 class="observer-ready">Mission</h1>
+                            <p class="observer-ready">- To provide high-quality products and services.</p>
+                            <p class="observer-ready">- To satisfy each of the customers and make them happy.</p>
+                            <p class="observer-ready">- To deliver a premium cafe experience..</p>
+                        </div>
+                        <div class="brand-personality">
+                            <h1 class="observer-ready">Brand Personality</h1>
+                            <ul>
+                                <li class="observer-ready">Friendly</li>
+                                <li class="observer-ready">Hospitality</li>
+                                <li class="observer-ready">Relaxed</li>
+                                <li class="observer-ready">Energetic</li>
+                                <li class="observer-ready">Familiar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-item">
+                    <img class="display-item-image observer-ready" src="logo-mockup2.png">
+                </div>
+                <div class="display-item">
+                    <img class="display-item-image observer-ready" src="logo-mockup3.png">
+                </div>
+                <div class="display-item-full">
+                    <img class="display-item-image observer-ready" src="logo-mockup4.png">
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  </body>
+
+</html>
