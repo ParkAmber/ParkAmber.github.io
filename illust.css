@@ -905,6 +905,10 @@ body {
             .brand-personality ul li::before {
                 width: 5vw;
             }
+                     span {
+                font-size: 22px;
+                color: #D9A17D;
+            }
         }
 
         /* Tablet */
@@ -1231,7 +1235,7 @@ body {
             .logo-content {
                 width: 48vw;
                 margin-left: 2vw;
-                margin-top: 0;
+                margin-top: -1vw;
             }
 
 
@@ -1246,6 +1250,10 @@ body {
                 display: inline;
                 width: 5vw;
                 margin: 14vw 1vw 0 0.5vw;
+            }
+                       span {
+                font-size: 20px;
+                color: #D9A17D;
             }
         }
 
@@ -1411,7 +1419,7 @@ body {
                 width: 45vw;
                 height: 50vw;
                 justify-content: center;
-                margin-top: 1vw;
+               margin-top: 2vw;
                 margin-left: 3vw;
             }
 
@@ -1450,5 +1458,10 @@ body {
                 display: inline;
                 width: 5vw;
                 margin: 14vw 1vw 0 0.5vw;
+            }
+                    
+            span {
+                font-size: 30px;
+                color: #D9A17D;
             }
         }
