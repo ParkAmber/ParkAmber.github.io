@@ -1202,7 +1202,8 @@ height: 60vw;
 
             .profile-image {
                 width: 70vw;
-                height: 50vw;
+                height:60vw;
+               
 /*                 background-color: #c6c6c6;
                 margin: 0 auto; */
             }
@@ -1210,10 +1211,11 @@ height: 60vw;
                 width: 40vw;
                 height: auto;
                 margin-left: -25vw;
+                   margin-top: 9vw;
             }
 
             .profile-main-content {
-                margin-top: -52vw;
+                margin-top: -60vw;
                 margin-left: 28vw;
             }
 
