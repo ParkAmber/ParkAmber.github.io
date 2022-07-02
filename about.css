@@ -162,8 +162,15 @@
             margin: 0 auto;
         }
 
-        .profile-content h1 {
-            /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
+ .profile-main-content {
+            margin-top: -45vw;
+            margin-bottom: 15vw;
+            margin-left: 30vw;
+        }
+
+
+       /*  .profile-content h1 {
+            margin: 0 auto;=>화면의 가로로 text center 정렬 
             margin: 0 auto;
             width: 23vw;
             text-align: center;
@@ -172,55 +179,87 @@
             text-transform: uppercase;
             padding-top: 5.35vw;
             padding-bottom: 0.594vw;
+           
+            border-bottom: 5px solid #FFC074;
+        }
+*/
+
+.profile-main-content h1 {
+            /* margin: 0 auto;=>화면의 가로로 text center 정렬 */
+            /* margin: 0 auto; */
+            position: relative;
+            margin-left: 10vw;
+            width: 22vw;
+            text-align: center;
+            font-size: 3.567vw;
+            font-weight: 600;
+            /* text-transform: uppercase; */
+            padding-top: 5.35vw;
+            padding-bottom: 0.594vw;
+            z-index: 100;
             /* border-bottom: 100px; */
             border-bottom: 5px solid #FFC074;
         }
 
         .resume-button {
-            margin-top: 0.5vw;
-            margin-left: 70vw;
+            margin-top:3vw;
+            margin-left:10vw;
         }
 
         .resume-button h3 {
+ z-index: 100;
             font-size: 28px;
             color: #FFC074;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .resume-button .circle {
-            left: 10vw;
-            top: -2vw;
+        width: 1.8vw;
+            height: 1.8vw;
+            left: 8vw;
+            top: -1.8vw;
+        }
+.resume-button .circle:before {
+            background-size: 40% 40%;
+        }
+
+        .resume-button a:hover .circle::before {
+            background: url(images/arrow-hover.png);
+            background-size: 40% 40%;
+            background-repeat: no-repeat;
         }
 
         .profile-content h2 {
-            margin: 0 auto;
+           margin: 0 auto;
+            width: 50vw;
             /* width: 350px; */
-            text-align: center;
-            font-size: 30px;
-            line-height: 45px;
-            font-weight: 600;
+            /* text-align: center; */
+            z-index: 100;
+            margin-left: 10vw;
+            font-size: 28px;
+            line-height: 42px;
+            font-weight: 500;
             padding-top: 1vw;
         }
 
         .profile-content p {
-            margin: 20px auto;
-            text-align: center;
+          width: 50vw;
+            margin: 20px 0 0 10vw;
+            /* text-align: center; */
             /* margin-top: 1.189vw; */
             font-size: 20px;
             font-weight: 400;
             line-height: 30px;
-            color: #7B7B7B;
         }
 
         .main-contact {
-            margin-top: 8vw;
-            margin-left: 20vw;
+             margin-left: 10vw;
         }
 
         h3.contact-text {
-            font-size: 1.30vw;
+            font-size: 28px;
             color: #FFC074;
-            font-weight: 400;
+            font-weight: 600;
         }
 
         .social-icons {
@@ -282,7 +321,7 @@
 
         /* Contact Section */
         section.contact {
-            padding-bottom: 4vw;
+               margin-top: -10vw;
         }
 
         .contact-title {
@@ -329,17 +368,20 @@
 
         .email-send {
             margin-top: -2.972vw;
-            margin-left: 41.617vw;
+                  margin: -2.972vw auto;
         }
 
         h2.email-me {
+             width: 15vw;
+            text-align: center;
             font-size: 40px;
             font-weight: 600;
             color: #FFC074;
+            margin-left: 37vw;
         }
 
         .email-send .circle {
-            left: 35.67vw;
+           left: 53vw;
             top: -2.972vw;
         }
 
@@ -352,12 +394,16 @@
         /* deco */
 
         .contact .rect-deco {
-            position: absolute;
+           position: absolute;
             z-index: -100;
-            width: 100%;
+            width: 32vw;
             height: auto;
-            margin-top: -11.890vw;
-            margin-left: 62.42vw;
+            margin-top: 5vw;
+            margin-left: 72vw;
+        }
+ img.rectangle {
+            width: 90%;
+            height: 90%;
         }
 
         .profile .rect-deco {
@@ -373,17 +419,17 @@
             position: absolute;
         }
 
-        .contact .line-deco {
+/*         .contact .line-deco {
             z-index: -100;
             margin-top: -3vw;
             margin-left: 60vw;
         }
-
+ */
         .profile .line-deco {
 
-            position: absolute;
-            margin-top: 65vw;
-            margin-left: 30vw;
+                       position: absolute;
+            margin-top: 55vw;
+            margin-left: 15vw;
             z-index: -100;
         }
 
@@ -393,10 +439,9 @@
         }
 
         .line-deco-reverse {
-            position: absolute;
-            margin-top: 30vw;
-            margin-left: 10vw;
-            transform: rotate(180deg);
+    position: absolute;
+            margin-top: 1vw;
+            margin-left: 50vw;
         }
 
         .line-deco-reverse img.line {
@@ -587,20 +632,60 @@
 
             .profile-image {
                 width: 80vw;
-                height: 40vh;
+height: 60vw;
             }
 
 
-            .profile-content h1 {
+/*             .profile-content h1 {
                 padding-bottom: 5px;
                 width: 55vw;
                 font-size: 8.4vw;
                 border-bottom: 3px solid #FFC074;
+            } */
+
+            img.profile {
+                position: absolute;
+                margin-left: -24vw;
+                margin-top: 4.5vw;
+                width: 50vw;
+                height: auto;
             }
 
+            .profile-main-content h1 {
+                width: 45vw;
+                margin-top: 6vw;
+                margin-left: 15vw;
+                font-size: 30px;
+            }
+
+            .profile-content h2 {
+                margin-top: 35vw;
+                margin-left: -22vw;
+                text-align: center;
+                width: 80vw;
+                font-size: 4.7vw;
+                line-height: 7vw;
+            }
+
+            .profile-content p {
+                margin-top: 5vw;
+                margin-left: -22vw;
+                text-align: center;
+                width: 80vw;
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
             .circle {
-                width: 8vw;
-                height: 8vw;
+                 width: 6vw;
+                height: 6vw;
+            }
+             .circle:before {
+                background-size: 40% 40%;
+            }
+           
+             .email-send a:hover .circle::before,
+            .resume-button a:hover .circle::before {
+                background-size: 40% 40%;
             }
 
             /* .circle:before {
@@ -616,7 +701,7 @@
 
             .resume-button {
                 margin-top: 4.7vw;
-                margin-left: 55vw;
+                 margin-left: -22vw;
             }
 
             .resume-button .circle {
@@ -624,7 +709,7 @@
                 top: -6vw;
             }
 
-            .profile-content h2 {
+/*             .profile-content h2 {
                 width: 80vw;
                 font-size: 4.7vw;
                 line-height: 7vw;
@@ -634,16 +719,22 @@
                 font-size: 3.5vw;
                 line-height: 5vw;
             }
+ */
+           .main-contact {
+                /* margin-top: 2vw; */
+                margin-left: -22vw;
+            }
 
             h3.contact-text {
                 width: 60vw;
                 text-align: center;
                 font-size: 4.7vw;
+                  margin-left: -20vw;
             }
 
             .social-icons {
 
-                width: 80vw;
+                width: 60vw;
             }
 
             .main-contact img {
@@ -671,15 +762,30 @@
                 font-size: 3.5vw;
             }
 
-            h2.email-me {
-                margin-left: -10vw;
+          h2.email-me {
+                width: 25vw;
+                margin: 0 auto;
                 font-size: 4.7vw;
+            }
+
+        .email-send a:hover .circle::before {
+/*                 background: url(images/arrow-hover.png); */
+                background-size: 40% 40%;
+                background-repeat: no-repeat;
             }
 
             .email-send .circle {
                 font-weight: 500;
-                left: 38vw;
+                left: 65vw;
                 top: -7vw;
+            }
+           .contact .rect-deco {
+                /* position: absolute;
+            z-index: -100;
+            width: 32vw;
+            height: auto; */
+                margin-top: 8vw;
+                margin-left: 72vw;
             }
         }
 
@@ -859,27 +965,63 @@
 
             .profile-image {
                 width: 80vw;
-                height: 50vh;
+                   height: 62vh;
+            }
+ img.profile {
+                position: absolute;
+                margin-left: -25vw;
+                margin-top: 10vw;
+                width: 45vw;
+                height: auto;
             }
 
-            .profile-content h1 {
+            .profile-main-content {
+                margin-top: -70vw;
+                margin-bottom: 15vw;
+                margin-left: 30vw;
+            }
+
+            .profile-main-content h1 {
+                z-index: 1;
+                padding-bottom: 5px;
+                width: 32vw;
+                font-size: 5.2vw;
+                border-bottom: 5px solid #FFC074;
+                /*  */
+            }
+           /* .profile-content h1 {
                 padding-bottom: 5px;
                 width: 34vw;
                 font-size: 5.2vw;
                 border-bottom: 3px solid #FFC074;
-                /*  */
+                  
+            }
+*/
+           
+         .profile-content h2 {
+                z-index: -10;
+                /* position: relative; */
+                width: 60vw;
+                font-size: 2.64vw;
+                line-height: 3.5vw;
             }
 
+            .profile-content p {
+                width: 55vw;
+                font-size: 1.95vw;
+                line-height: 3vw;
+            }
+           
             .resume-button h3 {
                 margin-top: 2.64vw;
-                margin-left: 2.64vw;
+/*                 margin-left: 2.64vw; */
                 font-size: 2.64vw;
                 font-weight: 500;
             }
 
             .circle {
-                width: 4vw;
-                height: 4vw;
+                width: 3vw;
+                height: 3vw;
             }
 
             .circle:before {
@@ -906,11 +1048,11 @@
             }
 
             .resume-button .circle {
-                left: 15vw;
-                top: -3.5vw;
+                left: 12vw;
+                top: -3vw;
             }
 
-            .profile-content h2 {
+/*             .profile-content h2 {
                 width: 80vw;
                 font-size: 2.64vw;
                 line-height: 4.5vw;
@@ -921,16 +1063,24 @@
                 font-size: 1.95vw;
                 line-height: 3vw;
             }
+ */
+           
+           .main-contact {
+                margin-top: -1vw;
+                margin-left: 0;
+            }
 
-            h3.contact-text {
-                width: 60vw;
+          h3.contact-text {
+                width: 30vw;
                 text-align: center;
                 font-size: 2.64vw;
+                margin-left: 0;
             }
 
             .social-icons {
                 text-align: center;
-                width: 60vw;
+              margin-left: 1vw;
+                width: 40vw;
             }
 
             .main-contact img {
@@ -953,16 +1103,26 @@
             .contact-info h3 {
                 font-size: 1.95vw;
             }
-
+           
             h2.email-me {
-                margin-left: -10vw;
+                margin-left: 40vw;
                 font-size: 2.64vw;
             }
 
             .email-send .circle {
                 font-weight: 500;
-                left: 30.5vw;
+                left: 55vw;
                 top: -4vw;
+            }
+
+            .circle:before {
+                background-size: 30% 30%;
+                top: 28%;
+            }
+
+            .email-send a:hover .circle::before,
+            .resume-button a:hover .circle::before {
+                background-size: 30% 30%;
             }
         }
 
@@ -1019,15 +1179,26 @@
             }
 
             .profile {
+             margin-top: 10vw;
                 margin-bottom: 7vw;
 
             }
 
             .profile-image {
                 width: 70vw;
-                height: 50vh;
-                background-color: #c6c6c6;
-                margin: 0 auto;
+                height: 50vw;
+/*                 background-color: #c6c6c6;
+                margin: 0 auto; */
+            }
+            img.profile {
+                width: 40vw;
+                height: auto;
+                margin-left: -25vw;
+            }
+
+            .profile-main-content {
+                margin-top: -52vw;
+                margin-left: 28vw;
             }
 
             .profile-content h1 {
@@ -1038,7 +1209,7 @@
             .resume-button h3 {
                 font-size: 1.95vw;
                 color: #FFC074;
-                font-weight: 500;
+                font-weight: 600;
             }
 
             .circle {
@@ -1057,6 +1228,7 @@
             }
 
             .profile-content h2 {
+               position: relative;
                 font-size: 1.95vw;
                 line-height: 3vw;
             }
@@ -1067,18 +1239,18 @@
             }
 
             .main-contact {
-                margin-top: 3vw;
+ margin-top: 0;
             }
 
             h3.contact-text {
                 width: 60vw;
-                text-align: center;
+/*                 text-align: center; */
                 font-size: 1.95vw;
             }
 
             .social-icons {
-                text-align: center;
-                width: 60vw;
+/*                 text-align: center; */
+                width: 50vw;
             }
 
             .main-contact img {
@@ -1091,9 +1263,9 @@
                 width: 20vw;
             }
 
-            .contact h2 {
-                font-size: 1.95vw;
-                line-height: 3vw;
+           .contact h2 {
+                font-size: 3.567vw;
+                line-height: 5vw;
             }
 
             .email-send {
@@ -1101,12 +1273,17 @@
             }
 
             .contact-info h3 {
-                font-size: 1.46vw;
+              font-size: 1.95vw;
             }
 
-            h2.email-me {
-                margin-left: 2.5vw;
+           h2.email-me {
+                margin-left: 40vw;
                 font-size: 1.95vw;
-                font-weight: 500;
+                font-weight: 600;
+            }
+
+            .email-send .circle {
+                left: 54vw;
+                top: -3.972vw;
             }
         }
