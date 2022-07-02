@@ -231,7 +231,8 @@
         }
 
         .resume-button a:hover .circle::before {
-            background: url(images/arrow-hover.png);
+           
+            background: url(images/arrow-hover-thick.png);
             background-size: 40% 40%;
             background-repeat: no-repeat;
         }
@@ -319,8 +320,7 @@
             background-color: #FFC074;
         }
 
-        .email-send a:hover .circle::before,
-        .resume-button a:hover .circle::before {
+        .email-send a:hover .circle::before {
             background: url(images/arrow-hover-thick.png);
             background-size: 50% 50%;
             background-repeat: no-repeat;
