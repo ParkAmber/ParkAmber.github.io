@@ -152,10 +152,17 @@
         }
 
         .profile-image {
-            width: 700px;
-            height: 600px;
-            background-color: #c6c6c6;
-            margin: 0 auto;
+             width: 70vw;
+            margin-left: 22vw;
+            height: 44vw;
+            background-color: #FFEFDB;
+        }
+ img.profile {
+            position: absolute;
+            margin-left: -15vw;
+            margin-top: 4.5vw;
+            width: 34vw;
+            height: auto;
         }
 
         .profile-content {
