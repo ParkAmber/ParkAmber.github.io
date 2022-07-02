@@ -972,18 +972,18 @@ height: 60vw;
 
             .profile-image {
                 width: 80vw;
-                   height: 62vh;
+                   height: 70vh;
             }
  img.profile {
                 position: absolute;
                 margin-left: -25vw;
-                margin-top: 10vw;
+                margin-top: 16vw;
                 width: 45vw;
                 height: auto;
             }
 
             .profile-main-content {
-                margin-top: -70vw;
+                margin-top: -80vw;
                 margin-bottom: 15vw;
                 margin-left: 30vw;
             }
