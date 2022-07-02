@@ -1055,8 +1055,12 @@ height: 60vw;
             }
 
             .resume-button .circle {
-                left: 12vw;
-                top: -3vw;
+              .resume-button .circle {
+    width: 3vw;
+    height: 3vw;
+    left: 12vw;
+    top: -3vw;
+}
             }
 
 /*             .profile-content h2 {
@@ -1126,7 +1130,9 @@ height: 60vw;
                 background-size: 30% 30%;
                 top: 28%;
             }
-
+.resume-button .circle:before {
+    background-size: 30% 30%;
+}
             .email-send a:hover .circle::before,
             .resume-button a:hover .circle::before {
                 background-size: 30% 30%;
