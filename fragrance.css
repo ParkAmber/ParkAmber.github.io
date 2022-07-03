@@ -3036,3 +3036,14 @@ background-color: #FDEAE9; */
 
             }
         }
+@media screen and (min-width:2560px) {
+   .navcon {
+      margin: 15em 0 0 39.5em;
+   }
+   
+   .logo {
+      width: 2.5vw;
+      margin: 7vw 0 0 18vw;
+}
+   
+}
