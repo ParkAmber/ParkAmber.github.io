@@ -38,7 +38,7 @@
             margin-left: 13vw;
             width: 0%;
             height: inherit;
-            background: #ffb510;
+            background: #FFC074;
             position: absolute;
             animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
             display: flex;
@@ -91,7 +91,7 @@
             margin-left: 3vw;
             width: 0%;
             height: inherit;
-            background: #FFEFDB;
+            background: #FFC074;
             position: absolute;
             animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
             animation-delay: 2s;
