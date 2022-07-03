@@ -1847,6 +1847,9 @@
    .contact-dropdown-content img {
       top: 0.6vw;
    }
+       .global-nav {
+              backdrop-filter:none;
+       }
 }
 
            
