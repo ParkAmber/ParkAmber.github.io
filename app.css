@@ -2548,7 +2548,7 @@ background: -webkit-linear-gradient(30deg, #B918E4, #FFD833);
 
         }
 
-  @media screen and (max-width:2560px) {
+  @media screen and (min-width:2560px) {
        .contact-dropdown-content img {
             top: 0.6vw;
        }
