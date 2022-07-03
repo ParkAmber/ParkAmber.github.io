@@ -76,7 +76,7 @@
         .contact-dropdown-content img {
             position: relative;
             width: 13%;
-            top: 0.7vw;
+            top: 0.9vw;
             left: 0;
         }
 
@@ -1844,3 +1844,8 @@
                 font-size: 18px;
             }
         }
+@media screen and (min-width:2560px) {
+   .contact-dropdown-content img {
+      top: 0.6vw;
+   }
+}
