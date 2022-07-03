@@ -659,6 +659,7 @@ height: 60vw;
             }
 
             .profile-main-content h1 {
+               z-index: 1;
                 width: 45vw;
                 margin-top: 6vw;
                 margin-left: 15vw;
