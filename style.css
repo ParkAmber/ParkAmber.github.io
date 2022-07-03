@@ -2649,7 +2649,11 @@
                 overflow-x: hidden;
             }
         }
-
+@media screen and (min-width:2560px){
+    .contact-dropdown-content img {
+        top: 0.6vw;
+    }
+}
         @media screen and (min-width:4000px) {
             .work-item {
                 /* position: relative; */
