@@ -4032,6 +4032,7 @@
 
         }
 @media screen and (min-width:2560px){
+  .global-nav-links {backdrop-filter: none;}
    .contact-dropdown-content img {
       top: 0.6vw;
    }
