@@ -3045,5 +3045,8 @@ background-color: #FDEAE9; */
       width: 2.5vw;
       margin: 7vw 0 0 18vw;
 }
+    .contact-dropdown-content img {
+      top: 0.6vw;
+   }
    
 }
