@@ -4032,5 +4032,7 @@
 
         }
 @media screen and (min-width:2560px){
-
+   .contact-dropdown-content img {
+      top: 0.6vw;
+   }
 }
